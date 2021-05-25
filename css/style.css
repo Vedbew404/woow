@@ -1,0 +1,1165 @@
+/* Estilos globales */
+@import '/fonts/stylesheet.css';
+
+body {
+  font: 12px "Mont";
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.container-sm, .container-md {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.img-thumbnail {
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+/* Encabezado **/
+header{
+  background: #ffd41f;
+  font-family: "Mont";
+  font-style: normal;
+  color: #ab8e14;
+  min-height: 22px;
+  padding: 1% 0% 1% 0%;
+}
+header .container-sm, header .container-md {
+  text-align: center;
+  padding-top: 0%;
+}
+header nav {
+  float: right;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header nav span{
+  float: left;
+}
+
+header a {
+  color: #463a05;
+  text-decoration: none;
+  font-size: 12px;
+}
+header .brand{
+  font-size: 1.6em;
+  text-align: left;
+  position: relative;
+  top: 26%;
+}
+header .lupa, .iconCar, .iconCue{
+  margin: auto;
+  width: 26px;
+  margin-bottom: 0%;
+  height: 32px;
+}
+#headerTienda .lupa{
+  display: none;
+}
+#backgroundHome {
+  background-image: url(/img/home.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-weight: 800;
+}
+#backgroundTienda {
+  background-image: url(/img/tienda.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-weight: 800;
+}
+#posHeader1, #posHeader2 {
+  color: #ffffff;
+  padding-top: 1%;
+  padding-bottom: 0.2%;
+  min-height: 39px;
+  font-family: 'Mont';
+  font-weight: 800;
+  font-style: normal;
+}
+#posHeader1 .actual, #posHeader2 .actual {
+  color: #ffd41f;
+}
+#posHeader1 a, #posHeader2 a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+}
+#posHeader1 li, header li, #posHeader2 li {
+  padding: 0 20px 0 20px;
+  margin-top: -1%;
+}
+#posHeader1 #marca h1, #posHeader2 #marca h1 {
+  margin: 0;
+}
+#posHeader1 .resaltado, #posHeader2 .resaltado {
+  font-weight: 800;
+  font-size: 2.2em;
+}
+#posHeader1 a:hover, #posHeader2 a:hover {
+  color: #333333;
+}
+#posHeader2 {
+  background: #1e9bd6;
+}
+/* Cabecera con imagen */
+#cabecera, #cabecera2 {
+  min-height: 300px;
+  color: #ffffff;
+  font-family: 'Mont';
+  font-weight: 800;
+  font-style: normal;
+}
+#cabecera h1 {
+  margin-top: 19.2%;
+  font-size: 66px;
+  position: relative;
+  left: 48.1%;
+  font-weight: 800;
+}
+#cabecera input {
+  margin-top: 0;
+  margin-bottom: 44%;
+  border: 1px solid #ffd41f;
+  color: #ffffff;
+  background: none;
+  padding: 1%;
+  max-width: 14.5%;
+  position: relative;
+  left: 74%;
+  border-radius: 2%;
+  font-weight: 800;
+  font-size: 22px;
+}
+#cabecera input:hover{
+  background: #ffd41f;
+  color: #333333;
+  border-color: #ccc;
+}
+#cabecera p {
+  font-size: 20px;
+}
+#cabecera2 h1 {
+  margin-top: 24%;
+  font-size: 5.8em;
+  font-weight: 800;
+  position: relative;
+  left: 7.2%;
+}
+#cabecera2 h2, #cabeceraProducto h2 {
+  color: #ffffff;
+  margin-top: -3%;
+  margin-bottom: 36%;
+  font-family: 'Mont';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 1.5%;
+  max-width: 31.5%;
+  position: relative;
+  left: 6.2%;
+}
+#cabecera2 form, #cabeceraProducto form {
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin-top: -36.3%;
+  margin-bottom: 18.5%;
+  font-size: 14px;
+  padding: 1.5%;
+  max-width: 50.5%;
+  position: relative;
+  left: 5.8%;
+}
+#cabecera2 .lupita, #cabeceraProducto .lupita {
+  margin-top: -2%;
+  margin-bottom: -2.5%;
+  width: 32px;
+  height: 38px;
+}
+#cabecera2 .search, #cabeceraProducto .search {
+  font-family: 'Mont';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1em;
+  outline: none;
+  width: 75%;
+  border-radius: 5px;
+  border: 0;
+  position: absolute;
+  bottom: 30%;
+  left: 11%;
+}
+#cabecera2 .submit, #cabeceraProducto .submit {
+  position: absolute;
+  top: 30%;
+  left: 88%;
+}
+#cabecera2 p, #cabeceraProducto p {
+  font-size: 20px;
+}
+#cabeceraProducto h2{
+  color: #878787;
+  margin-top: 3%;
+}
+#cabeceraProducto form {
+  background: #f1f1f1;
+  margin-bottom: 4.5%;
+}
+#cabeceraProducto .search {
+  background: #f1f1f1;
+}
+#linea .container-md {
+  text-align: center;
+}
+#linea .separador{
+  background: #bbbbbb;
+  border: #bbbbbb;
+  color: #bbbbbb;
+  font-size: 0.2em;
+  text-decoration: none;
+  border-radius: 11%;
+  padding: 0% 9% 0% 9%;
+}
+/* Pagina Home */
+/* Productos */
+#productos {
+  margin-top: 2%;
+  margin-bottom: -1%;
+}
+#productos , #productos h1{
+  text-decoration: none;
+  color: #878787;
+}
+#productos h1 {
+  font-size: 2.8em;
+  text-align: center;
+}
+#productos .items{
+  position: relative;
+  left: 2.2%;
+}
+#productos .izquierda {
+  float: left;
+  position: relative;
+  margin-top: 20%;
+}
+#productos .derecha {
+  float: left;
+  position: relative;
+  margin-top: 20%;
+}
+#productos .caja, #productos .cajita {
+  text-align: center;
+  padding: 0.5%;
+  margin: 3% 1% 1% 1%;
+  position: relative;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  box-shadow: 1px 1px 11px #8b8b8b; 
+}
+#productos .caja {
+  width: 24.5%;
+}
+#productos .cajita {
+  width: 31%;
+}
+#productos .caja img, #productos .cajita img {
+  width: 100%;
+  height: 100%;
+}
+#productos .tituloproducto,
+#productos .descripcionproducto {
+  text-align: left !important;
+  padding-right: 6%;
+  padding-left: 6%;
+}
+#productos .tituloproducto{
+  font-size: 2em;
+  margin-top: 3%;
+}
+#productos .descripcionproducto{
+  font-size: 1.2em;
+}
+#productos .imagencita {
+  padding: 0 24 0 24;
+  margin: auto;
+  margin-top: 6%;
+}
+#productos .previa {
+  position: absolute;
+  right: 0;
+  top: 14%;
+  display: none;
+}
+#productos .previaSlide {
+    top: 9%;
+}
+#productos a:hover .previa {
+  display: block;
+}
+#productos .separadorsito {
+  background: #414141;
+  border: #414141;
+  color: #414141;
+  font-size: 0.2em;
+  text-align: left !important;
+  text-decoration: none;
+  border-radius: 11%;
+  padding: 0% 9% 0% 9%;
+  width: 28%;
+  position: relative;
+  left: 6%;
+  margin-top: 11%;
+}
+/* Banners */
+#banners1 {
+  margin-bottom: 8%;
+}
+#banners1 .banner {
+  width: 50%;
+  margin-bottom: 2%;
+}
+#banners2 {
+  display: none;
+}
+/* Fin pagina Home */
+#separadorInvisible{
+  margin-top: 7%;
+}
+/* Pagina Tienda */
+#productos a{
+  color: #878787;
+  text-decoration: none;
+}
+#siguientesProductos{
+  align-content: center;
+  margin-top: 5%;
+}
+#siguientesProductos .numeros{
+  float: left;
+  color: #000000;
+  font-size: 1.3em;
+  position: relative;
+  left: 45.5%;
+  padding-top: 0.3%;
+  padding-left: 0.7%;
+  padding-right: 0.7%;
+}
+#siguientesProductos .proActual{
+  background: #1e9bd6;
+  border-radius: 50%;
+  float: left;
+  color: #ffffff;
+  font-size: 1.3em;
+  position: relative;
+  left: 45.5%;
+  padding-top: 0.3%;
+  padding-left: 0.7%;
+  padding-right: 0.7%;
+}
+#siguientesProductos a{
+  text-decoration: none;
+}
+#siguientesProductos .numeros:hover, #siguientesProductos .proActual:hover{
+  background-color: #878787;
+  border-radius: 50%;
+}
+#siguientesProductos .left{
+  max-width: 2%;
+  position: relative;
+  left: 33%;
+}
+#siguientesProductos .right{
+  max-width: 2%;
+  position: relative;
+  left: 44.5%;
+}
+#buscar.btnBusqueda{
+  float: right;
+  width: 38px;
+  height: 38px;
+  text-decoration: none;
+  top: -10px;
+  position: relative;
+}
+#buscar.btnBusqueda img{
+  width: 38px;
+  height: 38px;
+}
+/* Fin pagina Tienda */
+/* Inicio single */
+#Product{
+  display: block;
+  margin-bottom: 6%;
+}
+#Product img{
+  width: 90%;
+  position: relative;
+  left: 18%;
+}
+#Product .botonL{
+  float: right;
+  width: 38px;
+  position: relative;
+  left: 0%;
+  margin-right: 2%;
+}
+#Product .botonR{
+  float: right;
+  width: 38px;
+  position: relative;
+  left: 0%;
+}
+#imgsProduct img{
+  width: 31%;
+  position: relative;
+  left: 11%;
+  margin-bottom: 8%;
+  margin-right: 1%;
+}
+#Product .InformacionProduct{
+  max-width: 27%;
+  margin-top: 7%;
+  position: absolute;
+  right: 18%;
+}
+#Product .separadore{
+  background: #414141;
+  border: #414141;
+  border-radius: 11%;
+  height: 0.4%;
+  width: 35%;
+  margin-top: 4%;
+  position: absolute;
+  top: -7.5%;
+  left: 0.5%;
+}
+#Product h1{
+  font-size: 3em;
+  color: #878787;
+}
+#Product h2{
+  font-size: 2.8em;
+}
+#Product p{
+  font-size: 2em;
+  color: #bbbbbb;
+}
+label{
+  font-size: 1.9em;
+  color: #8b8b8b;
+}
+#talla {
+  background: #bbbbbb;
+  border-color: #bbbbbb;
+  font-size: 1.2em;
+  padding: 1.5%;
+  padding-left: 3%;
+  border-radius: 8px;
+  margin-bottom: 4%;
+}
+#Product input.signoMENOS{
+  float: left;
+  width: 5%;
+  position: relative;
+  margin-top: 0%;
+  margin-left: 0%;
+}
+.cantidad {
+  float: left;
+  background: #e5e5e5;
+  border-color: #e5e5e5;
+  border-radius: 6px;
+  border: 0;
+  outline: none;
+  text-align: center;
+  font-size: 1.6em;
+  width: 9%;
+  position: relative;
+  left: 7%;
+  margin-top: 2%;
+  padding: 1%;
+}
+.cantidad::-webkit-inner-spin-button, 
+.cantidad::-webkit-outer-spin-button{ 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+#Product input.signoMAS{
+  float: left;
+  width: 5%;
+  position: relative;
+  margin-top: 1%;
+  margin-left: 14%;
+}
+.botonCarrito {
+  float: left;
+  background: #1e9bd6;
+  font-size: 18px;
+  padding: 1.5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  max-width: 47%;
+  margin-top: -4%;
+  margin-bottom: 3%;
+  color: #ffffff;
+  border-radius: 6px;
+  outline: none;
+  border: 0;
+  position: relative;
+  left: 10%;
+}
+.botonCarrito:hover{
+  background: #ffd41f;
+  color: #333333;
+}
+#Product p.detalles{
+  font-size: 1.2em;
+  padding: 0;
+  margin-top: -4%;
+  position: relative;
+  top: 3%;
+}
+#imgsProduct .descripcionHTML {
+  background-color: #878787;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 7%;
+  padding-bottom: 7%;
+  border-radius: 6px;
+  margin-left: 6%;
+  margin-right: 6%;
+  margin-bottom: 1%;
+}
+#imgsProduct .descripcionHTML h1 {
+  font-size: 8em;
+}
+/* Pagina Nosotros */
+#backgroundNosotros {
+  background-image: url(/img/nosotros.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#cabeceraNosotros h1 {
+  min-height: 300px;
+  font-size: 66px;
+  color: #ffffff;
+  font-weight: 800;
+  margin-top: 31%;
+  margin-bottom: -4%;
+  position: relative;
+  left: 5%;
+}
+#tituloNosotros h1 {
+  text-align: center;
+  font-weight: normal;
+  color: #878787;
+  width: 60%;
+  margin-top: 4%;
+  margin-bottom: 3%;
+  position: relative;
+  left: 21%;
+}
+#MisionVision h1 {
+  padding-top: 6%;
+  font-size: 9em;
+  font-weight: 800;
+  margin-bottom: -2%;
+}
+#MisionVision .bloqueAzul h1 {
+  padding-top: 20%;
+}
+#MisionVision p {
+  padding: 6%;
+  padding-top: 0%;
+  font-size: 2.1em;
+  font-weight: normal;
+  margin-top: 2%;
+}
+#MisionVision .bloqueAzul {
+  background-color: #1e9bd6;
+  color: #ffffff;
+  text-align: center;
+  padding: 1%;
+  margin-top: 4%;
+  position: relative;
+  right: 0.5%;
+}
+#MisionVision .gatoL {
+  margin-top: 4%;
+  position: relative;
+  right: 0.61%;
+}
+#MisionVision .perroR {
+  position: relative;
+  left: 0.61%;
+}
+#MisionVision .barrita {
+  background: #ffffff;
+  border: #ffffff;
+  color: #ffffff;
+  font-size: 0.3em;
+  text-decoration: none;
+  border-radius: 9px;
+  padding: 0% 12% 0% 12%;
+}
+#MisionVision .bloqueAmarillo {
+  background-color: #ffd41f;
+  color: #ffffff;
+  text-align: center;
+  padding: 1%;
+  position: relative;
+  left: 0.5%;
+}
+/* Fin Nosotros */
+/* Pagina Contacto */
+#backgroundContacto {
+  background-image: url(/img/contacto.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+#cabeceraContacto h1 {
+  min-height: 300px;
+  font-size: 66px;
+  color: #1e9bd6;
+  font-weight: 800;
+  margin-top: 31%;
+  margin-bottom: -4%;
+  position: relative;
+  left: 1%;
+}
+#formContacto h2 {
+  text-align: center;
+  color: #606060;
+}
+#formContacto h2.h2Sup {
+  margin-top: 4%;  
+}
+#formContacto .ButtonW a, #formContacto .ButtonT a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 2em;
+  padding-left: 18%;
+  position: absolute;
+  top: 18%;
+}
+#formContacto .ButtonW {
+  background: #3CD800;
+  margin-top: 5%;
+  width: 24%;
+  padding: 0.5%;
+  outline: none;
+  border-radius: 36px;
+  box-shadow: 1px 1px 3px #8b8b8b;
+  position: relative;
+  left: 22.7%;
+}
+#formContacto .ButtonW img {
+  width: 15%;
+  position: relative;
+  left: 7%;
+}
+#formContacto .ButtonT {
+  background: #3DA7E1;
+  width: 24%;
+  padding: 0.5%;
+  outline: none;
+  border-radius: 36px;
+  box-shadow: 1px 1px 3px #8b8b8b;
+  position: relative;
+  left: 53%;
+  bottom: 7.3%;
+}
+#formContacto .ButtonT img {
+  width: 15%;
+  position: relative;
+  left: 7%;
+}
+#formContacto .FormNA,
+#formContacto .FormT,
+#formContacto .FormMascota,
+#formContacto .FormE,
+#formContacto .FormM,
+#formContacto .FormButton {
+  background: #ffffff;
+  color: #757575;
+  font-size: 1.8em;
+  outline: none;
+  padding: 0.5%;
+  padding-left: 2%;
+  border-radius: 6px;
+  border: 0;
+  box-shadow: 1px 1px 5px #8b8b8b;
+  position: relative;
+  left: 25%;
+}
+#formContacto .FormNA {
+  width: 50%;
+  margin-top: 2%;
+}
+#formContacto .FormT {
+  width: 24.5%;
+  margin-top: 1%;
+}
+#formContacto .FormMascota {
+  width: 24.5%;
+  margin-top: 1%;
+  margin-left: 0.8%;
+}
+#formContacto .FormE {
+  width: 50%;
+  margin-top: 1%;
+}
+#formContacto .FormM {
+  width: 50%;
+  height: 120px;
+  margin-top: 1%;
+}
+#formContacto .FormButton {
+  background: #1e9bd6;
+  color: #ffffff;
+  text-align: center;
+  padding: 1% 0% 1% 0%;
+  width: 50%;
+  margin-top: 1%;
+}
+#formContacto .FormButton:hover {
+  background: #ffd41f;
+  color: #ab8e14;
+}
+/* Fin Contacto */
+/* Pagina Perfil Canino */
+#backgroundPerfilCanino {
+  background-image: url(/img/perfilCanino.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  font-weight: 800;
+  min-height: 577px;
+}
+#backgroundPerfilCanino .cabecera {
+  color: #ffffff;
+}
+#backgroundPerfilCanino .cabecera h4 {
+  text-align: right;
+  margin-top: 6%;
+}
+#backgroundPerfilCanino .cabecera img {
+  width: 300px;
+}
+#backgroundPerfilCanino .cabecera .nombrePC {
+  text-align: left;
+}
+#backgroundPerfilCanino .cabecera .nombrePC h2 {
+  font-weight: 800;
+  font-size: calc(1.1rem + 2.2vw);
+  margin-top: 20%;
+}
+#backgroundPerfilCanino .cabecera .nombrePC h1 {
+  font-weight: 800;
+  font-size: calc(1.1rem + 4.4vw);
+  margin-top: -1.5%;
+}
+#backgroundPerfilCanino .cabecera .LineaDecorativa {
+  width: 0%;
+  height: 48px;
+  border-right: 3px solid #ffffff;
+  margin-top: 25%;
+}
+#backgroundPerfilCanino .cabecera .nombrePC p {
+  font-weight: normal;
+  font-size: calc(0.9rem + 1.1vw);
+  margin-top: -1.5%;
+}
+#backgroundPerfilCanino .cabecera .nombrePC .pAyudame {
+  margin-top: -4%;
+}
+#backgroundPerfilCanino .cabecera .ButtonAyudar {
+  background-color: #ffd41f;
+  font-weight: 800;
+  font-size: calc(1rem + 0.7vw);
+  color: #ffffff;
+  padding: 1% 4% 1% 4%;
+  border-radius: 64px;
+  border: none;
+}
+#backgroundPerfilCanino .cabecera .ButtonAyudar:hover, #InformacionGeneral .buttonSA:hover {
+  background-color: #ffd41f;
+  color: #ab8e14;
+}
+#InformacionGeneral {
+  text-align: center;
+  color: #666666;
+}
+#InformacionGeneral .row {
+  margin-top: 5%;
+}
+#InformacionGeneral .tituloIG {
+  font-weight: 800;
+  font-size: 3.6em;
+  color: #606060;
+  margin-top: -3%;
+  margin-bottom: 6%;
+}
+#InformacionGeneral h2 {
+  font-size: calc(1.1rem + 1.2vw);
+}
+#InformacionGeneral .col-6 img {
+  width: 21.333333%;
+}
+#InformacionGeneral .buttonSA {
+  background-color: #1e9bd6;
+  font-weight: 800;
+  font-size: calc(1rem + 0.7vw);
+  color: #ffffff;
+  border-radius: 14px;
+  border: none;
+  padding: 0.5% 3% 0.5% 3%;
+  margin-top: 2%;
+}
+#InformacionGeneral h3 {
+  font-weight: 800;
+  font-size: calc(1.325rem + 1.5vw);
+  margin-top: 2%;
+  margin-bottom: 4%;
+}
+#DatosContacto {
+  background-color: #EFEFEF;
+  text-align: center;
+  color: #666666;
+  padding-bottom: 3%;
+}
+#DatosContacto h4 {
+  text-align: right;
+}
+#DatosContacto img {
+  width: 77px;
+  margin-top: 22%;
+}
+#DatosContacto .imgDireccion {
+  margin-top: 5%; 
+}
+#DatosContacto h3 {
+  text-align: left;
+  font-size: calc(0.85rem + 1.5vw);
+}
+#DatosContacto .marginTopP {
+  margin-top: 6%;
+}
+#DatosContacto .marginTopT {
+  margin-top: 2%;
+}
+#DatosContacto .marginTopD {
+  margin-top: 3.5%;
+}
+#DatosMedicos {
+  text-align: center;
+  color: #878787;
+}
+#DatosMedicos h1 {
+  font-weight: 800;
+  margin: 7% 0% 4% 0%;
+}
+#DatosMedicos h2 {
+  font-size: calc(0.28rem + 1.8vw);
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  color: #4d4d4d;
+  margin-bottom: 22%;
+}
+#DatosMedicos img {
+  width: 111px;
+}
+#DatosMedicos p {
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  font-size: calc(0.7rem + 0.4vw);
+}
+#DatosMedicos p a {
+  text-decoration: none;
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+  color: #878787;
+}
+/* Fin perfilCanino */
+/* RegistroMascota */
+#RegistroMascota {
+  background-color: #F7BB00;
+}
+#RegistroMascota h1 {
+  text-align: center;
+  font-size: 3.3em;
+  color: white;
+  width: 52%;
+  margin-top: 6%;
+  position: relative;
+  left: 24%;
+}
+#RegistroMascota h2 {
+  text-align: center;
+  font-size: 2.2em;
+  color: white;
+  margin-top: 3%;
+}
+#RegistroMascota h3 {
+  text-align: center;
+  font-size: 2.2em;
+  color: white;
+  margin-top: 5%;
+}
+/* Fin RegistroMascota */
+/* footer */
+#prefooter {
+  text-align: center;
+  font-weight: 800;
+  background: #878787;
+  color: #ffffff;
+  padding: 15px 60px 15px 30px;
+  min-height: 39px;
+  margin-top: 3%;
+}
+#prefooter .col-sm-2, #prefooter .col-sm-3 {
+  margin-top: 5%;
+}
+#prefooter .right {
+  text-align: right;
+}
+#prefooter .left {
+  text-align: left;
+}
+#prefooter a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+#prefooter p {
+  text-decoration: none;
+  font-size: 13px;
+  margin: 2% 0% 1% 0%;
+}
+footer {
+  padding: 11px;
+  color: #ffffff;
+  background-color: #606060;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 800;
+}
+/* Fin footer */
+/* Media Queries */
+/* Smartphones (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Styles */
+    header .brand {
+      text-align: center;
+      font-size: 1.2em;
+      margin-left: -12%;
+      top: 12%;
+    }
+    header .lupa {
+      position: absolute;
+      right: 30%;
+      top: 3%;
+    }
+    #posHeader1 .resaltado, #posHeader2 .resaltado {
+      position: absolute;
+      bottom: 90%;
+    }
+    .navbar-nav {
+      background: #1e9bd6;
+    }
+    #cabecera h1 {
+      margin-top: 4.2%;
+      font-size: 22px;
+    }
+    #cabecera input {
+      margin-bottom: 0;
+      max-width: 38.5%;
+      left: 71%;
+      font-size: 13px;
+    }
+  }
+  
+  /* Smartphones (landscape) ----------- */
+  @media only screen and (min-width : 321px) {
+  /* Styles */
+  }
+  
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width : 320px) {
+  /* Styles */
+  }
+  
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
+    header {
+      min-height: 101px;
+    }
+    header .brand {
+      text-align: center;
+      font-size: 1.1em;
+      top: 53%;
+      left: 7%;
+      width: 130%;
+      margin-top: 3%;
+      margin-bottom: 12%;
+    }
+    header .lupa {
+      position: absolute;
+      right: 30%;
+      top: 3%;
+    }
+    #backgroundHome {
+      background-image: url(/img/home.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      font-weight: 800;
+    }
+    #posHeader1 .resaltado, #posHeader2 .resaltado {
+      position: absolute;
+      bottom: 94%;
+      right: 43%;
+    }
+    #posHeader1 nav, #posHeader2 nav {
+      float: none;
+      position: absolute;
+      top: 2%;
+      left: 4%;
+      visibility: true;
+    }
+    .navbar-nav {
+      background-color: dimgrey;
+      position: absolute;
+      top: 100%;
+      left: 10%;
+    }
+    #cabecera h1 {
+      margin-top: 4.2%;
+      font-size: 22px;
+    }
+    #cabecera input {
+      margin-bottom: 0;
+      max-width: 38.5%;
+      left: 71%;
+      font-size: 13px;
+    }
+    #banners1 {
+      display: none;
+    }
+    #banners2 {
+      display: block;
+    }
+  }
+  /* iPads (landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+  }
+  
+  /* iPads (portrait) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+  }
+
+  /* Desktops and laptops ----------- */
+  @media only screen  and (min-width : 1224px) {
+  /* Styles */
+  }
+  
+  /* Large screens ----------- */
+  @media only screen  and (min-width : 1824px) {
+  /* Styles */
+  }
+  
+  /* iPhone 4 ----------- */
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  }
+  
+  /* iPhone 5 ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  /* iPhone 6, 7, 8 ----------- */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  /* iPhone 6+, 7+, 8+ ----------- */
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  /* iPhone X ----------- */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  /* iPhone XS Max, XR ----------- */
+  @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  /* Samsung Galaxy S3 ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  /* Samsung Galaxy S4 ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  /* Samsung Galaxy S5 ----------- */
+  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
