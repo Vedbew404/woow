@@ -6,6 +6,42 @@
 ?>
 
 <?php get_header(); ?>
+<header>
+    <div class="container-md">
+        <div class="row">
+            <div class="col-sm-8">
+                <p class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</p>
+            </div>
+            <div class="col-4">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="iconos">
+                            <a href="#">
+                                <img class="lupa" src="img/lupa.svg" alt="Buscar">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="iconos">
+                            <a href="#">
+                                <img class="iconCar" src="img/carrito.svg" alt="Carrito">
+                            </a>
+                        </div>
+                        <a class="CarritoCentrado" href="">Carrito</a>
+                    </div>
+                    <div class="col-4">
+                        <div class="iconos">
+                            <a href="#">
+                                <img class="iconCue" src="img/cuenta.svg" alt="Cuenta">
+                            </a>
+                        </div>
+                        <a href="">Mi Cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <section id="posHeader2">
     <div class="container-md">
         <div class="row">

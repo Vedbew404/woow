@@ -47,43 +47,6 @@
     <?php wp_body_open(); ?>
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'woow' ); ?></a>
-        <header>
-            <div class="container-sm">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <p class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</p>
-                    </div>
-                    <div class="col-4">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="iconos">
-                                    <a href="#">
-                                        <img class="lupa" src="./wp-content/themes/woow/img/lupa.svg" alt="Buscar">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="iconos">
-                                    <a href="#">
-                                        <img class="iconCar" src="./wp-content/themes/woow/img/carrito.svg" alt="Carrito">
-                                    </a>
-                                </div>
-                                <a href="">Carrito</a>
-                            </div>
-                            <div class="col-4">
-                                <div class="iconos">
-                                    <a href="#">
-                                        <img class="iconCue" src="./wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
-                                    </a>
-                                </div>
-                                <a href="">Mi Cuenta</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        
         <header id="masthead" class="site-header">
             <div class="site-branding">
                 <?php
