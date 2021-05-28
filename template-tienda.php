@@ -4,8 +4,8 @@
 *
 */
 ?>
-
-<?php get_header(); ?>
+<?php //if (!defined('ABSPATH')) exit; ?>
+<?php get_header();  ?>
 <header id="headerTienda">
     <div class="container-md">
         <div class="row">
@@ -62,16 +62,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li>
-                                <a class="nav-link" href="template-home.php">Home</a>
+                                <a class="nav-link" href="./home">Home</a>
                             </li>
                             <li>
-                                <a class="actual nav-link" href="template-tienda.php">Tienda</a>
+                                <a class="actual nav-link" href="./">Tienda</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="template-nosotros.php">Nosotros</a>
+                                <a class="nav-link" href="./nosotros">Nosotros</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="template-contacto.php">Contacto</a>
+                                <a class="nav-link" href="./contacto">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -91,7 +91,7 @@
                         <img class="lupita" src="../wp-content/themes/woow/img/lupa.svg">
                         <input class="search" type="search" name="busqueda" placeholder="Alimento para perros">
                         <a id="buscar" class="btnBusqueda" href="#">
-                            <img src="../wp-content/themes/woow/img\playbusqueda.svg" alt="Icono de busqueda">
+                            <img src="../wp-content/themes/woow/img/playbusqueda.svg" alt="Icono de busqueda">
                         </a>
                     </form>
                 </div>

@@ -5,7 +5,15 @@
 */
 ?>
 
-<?php get_header(); ?>
+<?php get_header(); 
+// var_dump( get_field('img_header'));
+// die();
+?>
+<style>
+#backgroundHome {
+    background-image: url(<?= get_field('img_header'); ?>);
+} 
+</style>
 <header>
     <div class="container-sm">
         <div class="row">
@@ -62,16 +70,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li>
-                                <a class="actual nav-link" href="template-home.php">Home</a>
+                                <a class="actual nav-link" href="./">Home</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="template-tienda.php">Tienda</a>
+                                <a class="nav-link" href="./tienda">Tienda</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="template-nosotros.php">Nosotros</a>
+                                <a class="nav-link" href="./nosotros">Nosotros</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="template-contacto.php">Contacto</a>
+                                <a class="nav-link" href="./contacto">Contacto</a>
                             </li>
                         </ul>
                     </div>

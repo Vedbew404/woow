@@ -62,16 +62,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li>
-                                <a class="nav-link" href="index.php">Home</a>
+                                <a class="nav-link" href="./home">Home</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="tienda.php">Tienda</a>
+                                <a class="nav-link" href="./tienda">Tienda</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="nosotros.php">Nosotros</a>
+                                <a class="nav-link" href="./nosotros">Nosotros</a>
                             </li>
                             <li>
-                                <a class="actual nav-link" href="contacto.php">Contacto</a>
+                                <a class="actual nav-link" href="./">Contacto</a>
                             </li>
                         </ul>
                     </div>
