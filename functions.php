@@ -100,6 +100,9 @@ if ( ! function_exists( 'woow_setup' ) ) :
 				'flex-height' => true,
 			)
 		);
+
+		// Add theme support for Woocomerce.
+		add_theme_support( 'woocommerce' );
 	}
 endif;
 add_action( 'after_setup_theme', 'woow_setup' );
