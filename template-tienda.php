@@ -114,7 +114,7 @@
             <div class="col-12">
                 <div class="row">
                     <div class="cajita col-sm-4">
-                        <a href="template-single.php">
+                        <a href="./single">
                             <div class="imagencita">
                                 <img src="../wp-content/themes/woow/img/single.png">
                                 <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
@@ -129,7 +129,7 @@
                         </a>
                     </div>
                     <div class="cajita col-sm-4">
-                        <a href="template-single.php">
+                        <a href="./single">
                             <div class="imagencita">
                                 <img src="../wp-content/themes/woow/img/single.png">
                                 <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
@@ -144,7 +144,7 @@
                         </a>
                     </div>
                     <div class="cajita col-sm-4">
-                        <a href="template-single.php">
+                        <a href="./single">
                             <div class="imagencita">
                                 <img src="../wp-content/themes/woow/img/single.png">
                                 <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
@@ -165,7 +165,7 @@
             <div class="col-12">
                 <div class="row">
                     <div class="cajita col-sm-4">
-                        <a href="template-single.php">
+                        <a href="./single">
                             <div class="imagencita">
                                 <img src="../wp-content/themes/woow/img/single.png">
                                 <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
@@ -180,7 +180,7 @@
                         </a>
                     </div>
                     <div class="cajita col-sm-4">
-                        <a href="template-single.php">
+                        <a href="./single">
                             <div class="imagencita">
                                 <img src="../wp-content/themes/woow/img/single.png">
                                 <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
@@ -195,7 +195,7 @@
                         </a>
                     </div>
                     <div class="cajita col-sm-4">
-                        <a href="template-single.php">
+                        <a href="./single">
                             <div class="imagencita">
                                 <img src="../wp-content/themes/woow/img/single.png">
                                 <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
