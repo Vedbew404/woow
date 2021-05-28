@@ -17,14 +17,14 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="lupa" src="./wp-content/themes/woow/img/lupa.svg" alt="Buscar">
+                                <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
                             </a>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCar" src="./wp-content/themes/woow/img/carrito.svg" alt="Carrito">
+                                <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg" alt="Carrito">
                             </a>
                         </div>
                         <a href="">Carrito</a>
@@ -32,7 +32,7 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCue" src="./wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
+                                <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
                             </a>
                         </div>
                         <a href="">Mi Cuenta</a>
@@ -62,16 +62,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li>
-                                <a class="actual nav-link" href="index.php">Home</a>
+                                <a class="actual nav-link" href="template-home.php">Home</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="tienda.php">Tienda</a>
+                                <a class="nav-link" href="template-tienda.php">Tienda</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="nosotros.php">Nosotros</a>
+                                <a class="nav-link" href="template-nosotros.php">Nosotros</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="contacto.php">Contacto</a>
+                                <a class="nav-link" href="template-contacto.php">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -98,14 +98,14 @@
                     <div class="row">
                         <div class="izquierda col-sm-1">
                             <a href="">
-                                <img src="img/izquierda.png" alt="">
+                                <img src="../wp-content/themes/woow/img/izquierda.png" alt="">
                             </a>
                         </div>
                         <div class="caja col-sm-3">
                             <a href="single.php">
                                 <div class="imagencita">
-                                    <img src="img/single.png">
-                                    <img class="previa previaSlide" src="img/previa.svg">
+                                    <img src="../wp-content/themes/woow/img/single.png">
+                                    <img class="previa previaSlide" src="../wp-content/themes/woow/img/previa.svg">
                                 </div>
                                 <h5 class="separadorsito">.</h5>
                                 <h3 class="tituloproducto">Placas ID Smart
@@ -118,8 +118,8 @@
                         <div class="caja col-sm-3">
                             <a href="single.php">
                                 <div class="imagencita">
-                                    <img src="img/PañoletaAzul.png">
-                                    <img class="previa previaSlide" src="img/previa.svg">
+                                    <img src="../wp-content/themes/woow/img/PañoletaAzul.png">
+                                    <img class="previa previaSlide" src="../wp-content/themes/woow/img/previa.svg">
                                 </div>
                                 <h5 class="separadorsito">.</h5>
                                 <h3 class="tituloproducto">Pañoleta - azul
@@ -132,8 +132,8 @@
                         <div class="caja col-sm-3">
                             <a href="single.php">
                                 <div class="imagencita">
-                                    <img src="img/ArnesFloral.png">
-                                    <img class="previa previaSlide" src="img/previa.svg">
+                                    <img src="../wp-content/themes/woow/img/ArnesFloral.png">
+                                    <img class="previa previaSlide" src="../wp-content/themes/woow/img/previa.svg">
                                 </div>
                                 <h5 class="separadorsito">.</h5>
                                 <h3 class="tituloproducto">Arnes Floral
@@ -145,7 +145,7 @@
                         </div>
                         <div class="derecha col-sm-1">
                             <a href="">
-                                <img src="img/derecha.png" alt="">
+                                <img src="../wp-content/themes/woow/img/derecha.png" alt="">
                             </a>
                         </div>
                     </div>
@@ -162,22 +162,22 @@
                 <div class="row">
                     <div class="banner col-6">
                         <a href="#">
-                            <img src="img/banner1.png" class="d-block w-100" alt="...">
+                            <img src="../wp-content/themes/woow/img/banner1.png" class="d-block w-100" alt="...">
                         </a>
                     </div>
                     <div class="banner col-6">
                         <a href="#">
-                            <img src="img/banner2.png" class="d-block w-100" alt="...">
+                            <img src="../wp-content/themes/woow/img/banner2.png" class="d-block w-100" alt="...">
                         </a>
                     </div>
                     <div class="banner col-6">
                         <a href="#">
-                            <img src="img/banner3.png" class="d-block w-100" alt="...">
+                            <img src="../wp-content/themes/woow/img/banner3.png" class="d-block w-100" alt="...">
                         </a>
                     </div>
                     <div class="banner col-6">
                         <a href="#">
-                            <img src="img/banner4.png" class="d-block w-100" alt="...">
+                            <img src="../wp-content/themes/woow/img/banner4.png" class="d-block w-100" alt="...">
                         </a>
                     </div>
                 </div>
@@ -202,16 +202,16 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="img/banner1.png" class="d-block w-100" alt="...">
+                            <img src="../wp-content/themes/woow/img/banner1.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/banner2.png" class="d-block w-100" alt="...">
+                            <img src="../wp-content/themes/woow/img/banner2.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/banner3.png" class="d-block w-100" alt="...">
+                            <img src="../wp-content/themes/woow/img/banner3.png" class="d-block w-100" alt="...">
                         </div>
                         <div class="carousel-item">
-                            <img src="img/banner4.png" class="d-block w-100" alt="...">
+                            <img src="../wp-content/themes/woow/img/banner4.png" class="d-block w-100" alt="...">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome"

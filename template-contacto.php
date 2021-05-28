@@ -17,14 +17,14 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="lupa" src="img/lupa.svg" alt="Buscar">
+                                <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
                             </a>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCar" src="img/carrito.svg" alt="Carrito">
+                                <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg" alt="Carrito">
                             </a>
                         </div>
                         <a class="CarritoCentrado" href="">Carrito</a>
@@ -32,7 +32,7 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCue" src="img/cuenta.svg" alt="Cuenta">
+                                <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
                             </a>
                         </div>
                         <a href="">Mi Cuenta</a>
@@ -112,13 +112,13 @@
         <div class="row">
             <div class="col-sm-6">
                 <div class="ButtonW col-sm-6">
-                    <img src="img/logoWhatsapp.svg" alt="Logo de Whatsapp">
+                    <img src="../wp-content/themes/woow/img/logoWhatsapp.svg" alt="Logo de Whatsapp">
                     <a href="#">Whatsapp</a>
                 </div>
             </div>
             <div class="col-sm-6">
                 <div class="ButtonT col-sm-6">
-                    <img src="img/logoTelegram.svg" alt="Logo de Telegram">
+                    <img src="../wp-content/themes/woow/img/logoTelegram.svg" alt="Logo de Telegram">
                     <a href="#">Telegram</a>
                 </div>
             </div>

@@ -17,14 +17,14 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="lupa" src="img/lupa.svg" alt="Buscar">
+                                <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
                             </a>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCar" src="img/carrito.svg" alt="Carrito">
+                                <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg" alt="Carrito">
                             </a>
                         </div>
                         <a class="CarritoCentrado" href="">Carrito</a>
@@ -32,7 +32,7 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCue" src="img/cuenta.svg" alt="Cuenta">
+                                <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
                             </a>
                         </div>
                         <a href="">Mi Cuenta</a>
@@ -122,7 +122,7 @@
 <section id="MisionVision">
     <div class="container-md">
         <div class="row">
-            <img class="img-fluid gatoL col-4" src="img/gatoLenguita.png" alt="gato">
+            <img class="img-fluid gatoL col-4" src="../wp-content/themes/woow/img/gatoLenguita.png" alt="gato">
             <div class="bloqueAzul col-8">
                 <h1>MISIÓN</h1>
                 <a class="barrita">.</a>
@@ -137,7 +137,7 @@
                     wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl
                     ut aliquip ex ea commodo consequat. Duis </p>
             </div>
-            <img class="img-fluid perroR col-4" src="img/perroRose.png" alt="perro">
+            <img class="img-fluid perroR col-4" src="../wp-content/themes/woow/img/perroRose.png" alt="perro">
         </div>
     </div>
 </section>

@@ -17,14 +17,14 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a class="lupa" href="#">
-                                <img src="img/lupa.svg" alt="Buscar">
+                                <img src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
                             </a>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCar" src="img/carrito.svg" alt="Carrito">
+                                <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg" alt="Carrito">
                             </a>
                         </div>
                         <a class="CarritoCentrado" href="">Carrito</a>
@@ -32,7 +32,7 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCue" src="img/cuenta.svg" alt="Cuenta">
+                                <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
                             </a>
                         </div>
                         <a href="">Mi Cuenta</a>
@@ -86,10 +86,10 @@
             <div class="col-12">
                 <h2>Busca lo que necesitas para tu mascota</h2>
                 <form action="../../form-result.php" method="post" target="_blank">
-                    <img class="lupita" src="img/lupa.svg">
+                    <img class="lupita" src="../wp-content/themes/woow/img/lupa.svg">
                     <input class="search" type="search" name="busqueda" placeholder="Alimento para perros">
                     <a id="buscar" class="btnBusqueda" href="#">
-                        <img src="img\playbusqueda.svg" alt="Icono de busqueda">
+                        <img src="../wp-content/themes/woow/img\playbusqueda.svg" alt="Icono de busqueda">
                     </a>
                 </form>
             </div>
@@ -100,13 +100,13 @@
     <div class="container-md">
         <div class="row">
             <div class="col-6">
-                <img src="img/single.png" alt="Imagen 1 del producto">
+                <img src="../wp-content/themes/woow/img/single.png" alt="Imagen 1 del producto">
                 <div id="imgsProduct">
                     <div class="row">
                         <div class="col-12">
-                            <img src="img/single.png" alt="Imagen 2 del producto">
-                            <img src="img/single.png" alt="Imagen 3 del producto">
-                            <img src="img/single.png" alt="Imagen 4 del producto">
+                            <img src="../wp-content/themes/woow/img/single.png" alt="Imagen 2 del producto">
+                            <img src="../wp-content/themes/woow/img/single.png" alt="Imagen 3 del producto">
+                            <img src="../wp-content/themes/woow/img/single.png" alt="Imagen 4 del producto">
                         </div>
                     </div>
                 </div>
@@ -114,10 +114,10 @@
             <div class="col-6">
                 <div>
                     <a href="#">
-                        <img class="botonR" src="img/right.svg" alt="Boton producto siguiente">
+                        <img class="botonR" src="../wp-content/themes/woow/img/right.svg" alt="Boton producto siguiente">
                     </a>
                     <a href="#">
-                        <img class="botonL" src="img/left.svg" alt="Boton producto anterior">
+                        <img class="botonL" src="../wp-content/themes/woow/img/left.svg" alt="Boton producto anterior">
                     </a>
                 </div>
             </div>
@@ -138,9 +138,9 @@
                 <br />
                 <label for="Cantidad">Cantidad</label>
                 <br />
-                <input class="signoMENOS" id="menos" type="image" src="img/signoMENOS.svg" alt="Signo Menos">
+                <input class="signoMENOS" id="menos" type="image" src="../wp-content/themes/woow/img/signoMENOS.svg" alt="Signo Menos">
                 <input class="cantidad" id="contador" type="number">
-                <input class="signoMAS" id="mas" type="image" src="img/signoMAS.svg" alt="signo Mas">
+                <input class="signoMAS" id="mas" type="image" src="../wp-content/themes/woow/img/signoMAS.svg" alt="signo Mas">
                 <br />
                 <input class="botonCarrito" type="submit" value="Añadir al carrito">
                 <br />
@@ -174,14 +174,14 @@
                     <div class="row">
                         <div class="izquierda col-sm-1">
                             <a href="">
-                                <img src="img/izquierda.png" alt="">
+                                <img src="../wp-content/themes/woow/img/izquierda.png" alt="">
                             </a>
                         </div>
                         <div class="caja col-sm-3">
                             <a href="single.php">
                                 <div class="imagencita">
-                                    <img src="img/single.png">
-                                    <img class="previa previaSlide" src="img/previa.svg">
+                                    <img src="../wp-content/themes/woow/img/single.png">
+                                    <img class="previa previaSlide" src="../wp-content/themes/woow/img/previa.svg">
                                 </div>
                                 <h5 class="separadorsito">.</h5>
                                 <h3 class="tituloproducto">Placas ID Smart
@@ -194,8 +194,8 @@
                         <div class="caja col-sm-3">
                             <a href="single.php">
                                 <div class="imagencita">
-                                    <img src="img/PañoletaAzul.png">
-                                    <img class="previa previaSlide" src="img/previa.svg">
+                                    <img src="../wp-content/themes/woow/img/PañoletaAzul.png">
+                                    <img class="previa previaSlide" src="../wp-content/themes/woow/img/previa.svg">
                                 </div>
                                 <h5 class="separadorsito">.</h5>
                                 <h3 class="tituloproducto">Pañoleta - azul
@@ -208,8 +208,8 @@
                         <div class="caja col-sm-3">
                             <a href="single.php">
                                 <div class="imagencita">
-                                    <img src="img/ArnesFloral.png">
-                                    <img class="previa previaSlide" src="img/previa.svg">
+                                    <img src="../wp-content/themes/woow/img/ArnesFloral.png">
+                                    <img class="previa previaSlide" src="../wp-content/themes/woow/img/previa.svg">
                                 </div>
                                 <h5 class="separadorsito">.</h5>
                                 <h3 class="tituloproducto">Arnes Floral
@@ -221,7 +221,7 @@
                         </div>
                         <div class="derecha col-sm-1">
                             <a href="">
-                                <img src="img/derecha.png" alt="">
+                                <img src="../wp-content/themes/woow/img/derecha.png" alt="">
                             </a>
                         </div>
                     </div>

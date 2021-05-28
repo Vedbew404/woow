@@ -17,14 +17,14 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a class="lupa" href="#">
-                                <img src="img/lupa.svg" alt="Buscar">
+                                <img src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
                             </a>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCar" src="img/carrito.svg" alt="Carrito">
+                                <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg" alt="Carrito">
                             </a>
                         </div>
                         <a class="CarritoCentrado" href="">Carrito</a>
@@ -32,7 +32,7 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCue" src="img/cuenta.svg" alt="Cuenta">
+                                <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
                             </a>
                         </div>
                         <a href="">Mi Cuenta</a>
@@ -62,16 +62,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav">
                             <li>
-                                <a class="nav-link" href="index.php">Home</a>
+                                <a class="nav-link" href="template-home.php">Home</a>
                             </li>
                             <li>
-                                <a class="actual nav-link" href="tienda.php">Tienda</a>
+                                <a class="actual nav-link" href="template-tienda.php">Tienda</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="nosotros.php">Nosotros</a>
+                                <a class="nav-link" href="template-nosotros.php">Nosotros</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="contacto.php">Contacto</a>
+                                <a class="nav-link" href="template-contacto.php">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -88,10 +88,10 @@
                     <h1>Tienda</h1>
                     <h2>Busca lo que necesitas para tu mascota</h2>
                     <form action="../../form-result.php" method="post" target="_blank">
-                        <img class="lupita" src="img/lupa.svg">
+                        <img class="lupita" src="../wp-content/themes/woow/img/lupa.svg">
                         <input class="search" type="search" name="busqueda" placeholder="Alimento para perros">
                         <a id="buscar" class="btnBusqueda" href="#">
-                            <img src="img\playbusqueda.svg" alt="Icono de busqueda">
+                            <img src="../wp-content/themes/woow/img\playbusqueda.svg" alt="Icono de busqueda">
                         </a>
                     </form>
                 </div>
@@ -114,10 +114,10 @@
             <div class="col-12">
                 <div class="row">
                     <div class="cajita col-sm-4">
-                        <a href="single.php">
+                        <a href="template-single.php">
                             <div class="imagencita">
-                                <img src="img/single.png">
-                                <img class="previa" src="img/previa.svg">
+                                <img src="../wp-content/themes/woow/img/single.png">
+                                <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
                             </div>
                             <h5 class="separadorsito">.</h5>
                             <h3 class="tituloproducto">Placas ID Smart
@@ -129,10 +129,10 @@
                         </a>
                     </div>
                     <div class="cajita col-sm-4">
-                        <a href="single.php">
+                        <a href="template-single.php">
                             <div class="imagencita">
-                                <img src="img/single.png">
-                                <img class="previa" src="img/previa.svg">
+                                <img src="../wp-content/themes/woow/img/single.png">
+                                <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
                             </div>
                             <h5 class="separadorsito">.</h5>
                             <h3 class="tituloproducto">Placas ID Smart
@@ -144,10 +144,10 @@
                         </a>
                     </div>
                     <div class="cajita col-sm-4">
-                        <a href="single.php">
+                        <a href="template-single.php">
                             <div class="imagencita">
-                                <img src="img/single.png">
-                                <img class="previa" src="img/previa.svg">
+                                <img src="../wp-content/themes/woow/img/single.png">
+                                <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
                             </div>
                             <h5 class="separadorsito">.</h5>
                             <h3 class="tituloproducto">Placas ID Smart
@@ -165,10 +165,10 @@
             <div class="col-12">
                 <div class="row">
                     <div class="cajita col-sm-4">
-                        <a href="single.php">
+                        <a href="template-single.php">
                             <div class="imagencita">
-                                <img src="img/single.png">
-                                <img class="previa" src="img/previa.svg">
+                                <img src="../wp-content/themes/woow/img/single.png">
+                                <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
                             </div>
                             <h5 class="separadorsito">.</h5>
                             <h3 class="tituloproducto">Placas ID Smart
@@ -180,10 +180,10 @@
                         </a>
                     </div>
                     <div class="cajita col-sm-4">
-                        <a href="single.php">
+                        <a href="template-single.php">
                             <div class="imagencita">
-                                <img src="img/single.png">
-                                <img class="previa" src="img/previa.svg">
+                                <img src="../wp-content/themes/woow/img/single.png">
+                                <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
                             </div>
                             <h5 class="separadorsito">.</h5>
                             <h3 class="tituloproducto">Placas ID Smart
@@ -195,10 +195,10 @@
                         </a>
                     </div>
                     <div class="cajita col-sm-4">
-                        <a href="single.php">
+                        <a href="template-single.php">
                             <div class="imagencita">
-                                <img src="img/single.png">
-                                <img class="previa" src="img/previa.svg">
+                                <img src="../wp-content/themes/woow/img/single.png">
+                                <img class="previa" src="../wp-content/themes/woow/img/previa.svg">
                             </div>
                             <h5 class="separadorsito">.</h5>
                             <h3 class="tituloproducto">Placas ID Smart
@@ -220,14 +220,14 @@
             <div class="col-12">
                 <div>
                     <a href="#">
-                        <img class="left" src="img/left.svg" alt="BotonLeft">
+                        <img class="left" src="../wp-content/themes/woow/img/left.svg" alt="BotonLeft">
                     </a>
                     <a Class="numeros" href="">1</a>
                     <a Class="proActual" href="">2</a>
                     <a Class="numeros" href="">3</a>
                     <a Class="numeros" href="">4</a>
                     <a href="">
-                        <img class="right" src="img/right.svg" alt="BotonRight">
+                        <img class="right" src="../wp-content/themes/woow/img/right.svg" alt="BotonRight">
                     </a>
                 </div>
             </div>

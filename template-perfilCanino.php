@@ -17,22 +17,22 @@
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="lupa" src="img/lupa.svg" alt="Buscar">
+                                <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
                             </a>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCar" src="img/carrito.svg" alt="Carrito">
+                                <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg" alt="Carrito">
                             </a>
                         </div>
-                        <a class="CarritoCentrado" href="">Carrito</a>
+                        <a class="CarritoCentrado" href="#">Carrito</a>
                     </div>
                     <div class="col-4">
                         <div class="iconos">
                             <a href="#">
-                                <img class="iconCue" src="img/cuenta.svg" alt="Cuenta">
+                                <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
                             </a>
                         </div>
                         <a href="">Mi Cuenta</a>
@@ -87,7 +87,7 @@
                 <div class="col-12">
                     <div class="row">
                         <h4 class="col-sm-5">
-                            <img class="img-fluid" src="img/imgPC.png" alt="Imagen del perro">
+                            <img class="img-fluid" src="../wp-content/themes/woow/img/imgPC.png" alt="Imagen del perro">
                         </h4>
                         <div Class="LineaDecorativa col-sm-1"></div>
                         <div class="nombrePC col-sm-6">
@@ -110,25 +110,25 @@
                 <h1 class="tituloIG">Información General</h1>
             </div>
             <div class="col-4">
-                <img class="col-4" src="img/huellaCanina.svg" alt="icono huella">
+                <img class="col-4" src="../wp-content/themes/woow/img/huellaCanina.svg" alt="icono huella">
                 <h2>Especie: Canina</h2>
             </div>
             <div class="col-4">
-                <img class="col-4" src="img/huellaCanina.svg" alt="icono huella">
+                <img class="col-4" src="../wp-content/themes/woow/img/huellaCanina.svg" alt="icono huella">
                 <h2>Raza: Golden</h2>
             </div>
             <div class="col-4">
-                <img class="col-4" src="img/reloj.svg" alt="icono reloj">
+                <img class="col-4" src="../wp-content/themes/woow/img/reloj.svg" alt="icono reloj">
                 <h2>Edad: 5 años</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-6">
-                <img class="col-6" src="img/sexo.svg" alt="icono sexo">
+                <img class="col-6" src="../wp-content/themes/woow/img/sexo.svg" alt="icono sexo">
                 <h2>Sexo: Macho</h2>
             </div>
             <div class="col-6">
-                <img class="col-6" src="img/peso.svg" alt="icono peso">
+                <img class="col-6" src="../wp-content/themes/woow/img/peso.svg" alt="icono peso">
                 <h2>Peso Promedio: 32kg</h2>
             </div>
         </div>
@@ -151,7 +151,7 @@
             <div Class="col-12">
                 <div class="row">
                     <h4 class="col-sm-3">
-                        <img class="img-fluid" src="img/iconoPropietario.svg" alt="icono propietario">
+                        <img class="img-fluid" src="../wp-content/themes/woow/img/iconoPropietario.svg" alt="icono propietario">
                     </h4>
                     <div Class="marginTopP col-sm-3">
                         <h3><strong>Propietario:</strong></h3>
@@ -162,7 +162,7 @@
                 </div>
                 <div class="row">
                     <h4 class="col-sm-3">
-                        <img class="img-fluid" src="img/iconoTelefonos.svg" alt="icono telefonos">
+                        <img class="img-fluid" src="../wp-content/themes/woow/img/iconoTelefonos.svg" alt="icono telefonos">
                     </h4>
                     <div Class="marginTopT col-sm-3">
                         <h3><strong>Telefono 1:</strong></h3>
@@ -177,7 +177,7 @@
                 </div>
                 <div class="row">
                     <h4 class="col-sm-3">
-                        <img class="imgDireccion img-fluid" src="img/iconoDireccion.svg" alt="icono direccion">
+                        <img class="imgDireccion img-fluid" src="../wp-content/themes/woow/img/iconoDireccion.svg" alt="icono direccion">
                     </h4>
                     <div Class="marginTopD col-sm-3">
                         <h3><strong>Dirección:</strong></h3>
@@ -199,15 +199,15 @@
         </div>
         <div class="row">
             <div class="datosM col-4">
-                <img class="img-fluid" src="img/iconoVacunas.svg" alt="Icono Vacunas">
+                <img class="img-fluid" src="../wp-content/themes/woow/img/iconoVacunas.svg" alt="Icono Vacunas">
                 <h2>Vacunas</h2>
             </div>
             <div class="datosM col-4">
-                <img class="img-fluid" src="img/iconoAlergias.svg" alt="Icono Alergias">
+                <img class="img-fluid" src="../wp-content/themes/woow/img/iconoAlergias.svg" alt="Icono Alergias">
                 <h2>Alergías</h2>
             </div>
             <div class="datosM col-4">
-                <img class="img-fluid" src="img/iconoEnfermedades.svg" alt="Icono Enfermedades">
+                <img class="img-fluid" src="../wp-content/themes/woow/img/iconoEnfermedades.svg" alt="Icono Enfermedades">
                 <h2>Enfermedades</h2>
             </div>
         </div>
