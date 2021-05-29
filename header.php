@@ -139,7 +139,7 @@
         </header>
         <!-- <p class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>"
                         rel="home"><?php //bloginfo( 'name' ); ?></a></p> -->
-        <?php
+        <!-- <?php
 			endif;
 			//$woow_description = get_bloginfo( 'description', 'display' );
 			if ( $woow_description || is_customize_preview() ) :
@@ -147,10 +147,10 @@
         <p class="site-description">
             <?php echo $woow_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
         </p>
-        <?php endif; ?>
+        <?php endif; ?> -->
     <!--</div> .site-branding -->
 
-    <nav id="site-navigation" class="main-navigation">
+    <!-- <nav id="site-navigation" class="main-navigation">
         <button class="menu-toggle" aria-controls="primary-menu"
             aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'woow' ); ?></button>
         <?php
@@ -160,6 +160,6 @@
 					'menu_id'        => 'primary-menu',
 				)
 			);
-			?>
+			?> -->
     </nav><!-- #site-navigation -->
     </header><!-- #masthead -->
