@@ -29,7 +29,8 @@
     <link rel="apple-touch-icon" sizes="144x144" href="../wp-content/plugins/um_vdbw404/img/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="../wp-content/plugins/um_vdbw404/img/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../wp-content/plugins/um_vdbw404/img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../wp-content/plugins/um_vdbw404/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="../wp-content/plugins/um_vdbw404/img/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="../wp-content/plugins/um_vdbw404/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="../wp-content/plugins/um_vdbw404/img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../wp-content/plugins/um_vdbw404/img/favicon-16x16.png">
@@ -45,36 +46,114 @@
 
 <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
-    <!-- <div id="page" class="site">
+    <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'woow' ); ?></a>
-        <header id="masthead" class="site-header"> -->
-            <!-- <div class="site-branding">
-                <?php
-			// the_custom_logo();
-			/*if ( is_front_page() && is_home() ) :
+
+        <!-- <header id="masthead" class="site-header">
+            <div class="site-branding"> -->
+        <?php
+			 //the_custom_logo();
+			if ( is_front_page() && is_home() ) :
 				?>
-                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                        rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                <?php
+        <header id="header2">
+            <div class="container-md">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="iconos">
+                                    <a class="lupa" href="#">
+                                        <img src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="iconos">
+                                    <a href="#">
+                                        <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg"
+                                            alt="Carrito">
+                                    </a>
+                                </div>
+                                <a class="CarritoCentrado" href="">Carrito</a>
+                            </div>
+                            <div class="col-4">
+                                <div class="iconos">
+                                    <a href="#">
+                                        <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg"
+                                            alt="Cuenta">
+                                    </a>
+                                </div>
+                                <a href="">Mi Cuenta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- <h1 class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>"
+                        rel="home"><?php //bloginfo( 'name' ); ?></a></h1> -->
+        <?php
 			else :
 				?>
-                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"
-                        rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                <?php
+        <header>
+            <div class="container-sm">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="iconos">
+                                    <a href="#">
+                                        <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="iconos">
+                                    <a href="#">
+                                        <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg"
+                                            alt="Carrito">
+                                    </a>
+                                </div>
+                                <a href="">Carrito</a>
+                            </div>
+                            <div class="col-4">
+                                <div class="iconos">
+                                    <a href="#">
+                                        <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg"
+                                            alt="Cuenta">
+                                    </a>
+                                </div>
+                                <a href="">Mi Cuenta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .site-branding -->
+        </header>
+        <!-- <p class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>"
+                        rel="home"><?php //bloginfo( 'name' ); ?></a></p> -->
+        <?php
 			endif;
-			$woow_description = get_bloginfo( 'description', 'display' );
+			//$woow_description = get_bloginfo( 'description', 'display' );
 			if ( $woow_description || is_customize_preview() ) :
 				?>
-                <p class="site-description">
-                    <?php echo $woow_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-                </p>
-                <?php endif;*/ ?>
-            </div>.site-branding -->
+        <p class="site-description">
+            <?php echo $woow_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
+        </p>
+        <?php endif; ?>
+    <!--</div> .site-branding -->
 
-            <!-- <nav id="site-navigation" class="main-navigation">
-                <button class="menu-toggle" aria-controls="primary-menu"
-                    aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'woow' ); ?></button>
-                <?php
+    <nav id="site-navigation" class="main-navigation">
+        <button class="menu-toggle" aria-controls="primary-menu"
+            aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'woow' ); ?></button>
+        <?php
 			wp_nav_menu(
 				array(
 					'theme_location' => 'menu-principal',
@@ -82,5 +161,5 @@
 				)
 			);
 			?>
-            </nav>#site-navigation -->
-        </header><!-- #masthead -->
+    </nav><!-- #site-navigation -->
+    </header><!-- #masthead -->

@@ -6,42 +6,6 @@
 ?>
 
 <?php get_header(); ?>
-<header id="headerTienda">
-    <div class="container-md">
-        <div class="row">
-            <div class="col-sm-8">
-                <p class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</p>
-            </div>
-            <div class="col-4">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="iconos">
-                            <a class="lupa" href="#">
-                                <img src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="iconos">
-                            <a href="#">
-                                <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg" alt="Carrito">
-                            </a>
-                        </div>
-                        <a class="CarritoCentrado" href="">Carrito</a>
-                    </div>
-                    <div class="col-4">
-                        <div class="iconos">
-                            <a href="#">
-                                <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
-                            </a>
-                        </div>
-                        <a href="">Mi Cuenta</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
 <section id="posHeader2">
     <div class="container-md">
         <div class="row">
@@ -114,7 +78,8 @@
             <div class="col-6">
                 <div>
                     <a href="#">
-                        <img class="botonR" src="../wp-content/themes/woow/img/right.svg" alt="Boton producto siguiente">
+                        <img class="botonR" src="../wp-content/themes/woow/img/right.svg"
+                            alt="Boton producto siguiente">
                     </a>
                     <a href="#">
                         <img class="botonL" src="../wp-content/themes/woow/img/left.svg" alt="Boton producto anterior">
@@ -138,9 +103,11 @@
                 <br />
                 <label for="Cantidad">Cantidad</label>
                 <br />
-                <input class="signoMENOS" id="menos" type="image" src="../wp-content/themes/woow/img/signoMENOS.svg" alt="Signo Menos">
+                <input class="signoMENOS" id="menos" type="image" src="../wp-content/themes/woow/img/signoMENOS.svg"
+                    alt="Signo Menos">
                 <input class="cantidad" id="contador" type="number">
-                <input class="signoMAS" id="mas" type="image" src="../wp-content/themes/woow/img/signoMAS.svg" alt="signo Mas">
+                <input class="signoMAS" id="mas" type="image" src="../wp-content/themes/woow/img/signoMAS.svg"
+                    alt="signo Mas">
                 <br />
                 <input class="botonCarrito" type="submit" value="Añadir al carrito">
                 <br />

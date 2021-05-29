@@ -6,42 +6,6 @@
 ?>
 
 <?php get_header(); ?>
-<header>
-    <div class="container-md">
-        <div class="row">
-            <div class="col-sm-8">
-                <p class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</p>
-            </div>
-            <div class="col-4">
-                <div class="row">
-                    <div class="col-4">
-                        <div class="iconos">
-                            <a href="#">
-                                <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-4">
-                        <div class="iconos">
-                            <a href="#">
-                                <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg" alt="Carrito">
-                            </a>
-                        </div>
-                        <a class="CarritoCentrado" href="#">Carrito</a>
-                    </div>
-                    <div class="col-4">
-                        <div class="iconos">
-                            <a href="#">
-                                <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg" alt="Cuenta">
-                            </a>
-                        </div>
-                        <a href="">Mi Cuenta</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
 <section id="posHeader2">
     <div class="container-md">
         <div class="row">
@@ -151,7 +115,8 @@
             <div Class="col-12">
                 <div class="row">
                     <h4 class="col-sm-3">
-                        <img class="img-fluid" src="../wp-content/themes/woow/img/iconoPropietario.svg" alt="icono propietario">
+                        <img class="img-fluid" src="../wp-content/themes/woow/img/iconoPropietario.svg"
+                            alt="icono propietario">
                     </h4>
                     <div Class="marginTopP col-sm-3">
                         <h3><strong>Propietario:</strong></h3>
@@ -162,7 +127,8 @@
                 </div>
                 <div class="row">
                     <h4 class="col-sm-3">
-                        <img class="img-fluid" src="../wp-content/themes/woow/img/iconoTelefonos.svg" alt="icono telefonos">
+                        <img class="img-fluid" src="../wp-content/themes/woow/img/iconoTelefonos.svg"
+                            alt="icono telefonos">
                     </h4>
                     <div Class="marginTopT col-sm-3">
                         <h3><strong>Telefono 1:</strong></h3>
@@ -177,7 +143,8 @@
                 </div>
                 <div class="row">
                     <h4 class="col-sm-3">
-                        <img class="imgDireccion img-fluid" src="../wp-content/themes/woow/img/iconoDireccion.svg" alt="icono direccion">
+                        <img class="imgDireccion img-fluid" src="../wp-content/themes/woow/img/iconoDireccion.svg"
+                            alt="icono direccion">
                     </h4>
                     <div Class="marginTopD col-sm-3">
                         <h3><strong>Dirección:</strong></h3>
@@ -207,7 +174,8 @@
                 <h2>Alergías</h2>
             </div>
             <div class="datosM col-4">
-                <img class="img-fluid" src="../wp-content/themes/woow/img/iconoEnfermedades.svg" alt="Icono Enfermedades">
+                <img class="img-fluid" src="../wp-content/themes/woow/img/iconoEnfermedades.svg"
+                    alt="Icono Enfermedades">
                 <h2>Enfermedades</h2>
             </div>
         </div>
