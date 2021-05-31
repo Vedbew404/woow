@@ -107,14 +107,14 @@
                     </div>
                     <div class="col-4">
                         <div class="row">
-                            <div class="col-4">
+                            <div class="Lupa col-4">
                                 <div class="iconos">
                                     <a href="#">
                                         <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="Carrito col-4">
                                 <div class="iconos">
                                     <a href="#">
                                         <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg"
@@ -123,7 +123,7 @@
                                 </div>
                                 <a href="">Carrito</a>
                             </div>
-                            <div class="col-4">
+                            <div class="MiCuenta col-4">
                                 <div class="iconos">
                                     <a href="#">
                                         <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg"

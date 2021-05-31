@@ -250,12 +250,12 @@ header .lupa, .iconCar, .iconCue{
 #productos .izquierda {
   float: left;
   position: relative;
-  margin-top: 20%;
+  margin-top: 23%;
 }
 #productos .derecha {
   float: left;
   position: relative;
-  margin-top: 20%;
+  margin-top: 23%;
 }
 #productos .caja, #productos .cajita {
   text-align: center;
@@ -1025,29 +1025,59 @@ header .lupa, .iconCar, .iconCue{
     header {
       min-height: 101px;
     }
+    header .container-sm {
+      width: 96%;
+    }
     header .brand {
       text-align: center;
-      font-size: 1.1em;
+      font-size: 1em;
       top: 53%;
       left: 7%;
       width: 130%;
       margin-top: 3%;
       margin-bottom: 12%;
     }
+    header .Lupa {
+      position: absolute;
+      right: 13%;
+      top: 7%;
+    }
     header .lupa {
       position: absolute;
       right: 30%;
       top: 3%;
     }
+    header .Carrito {
+      position: absolute;
+      right: 1%;
+      top: 7%;
+    }
+    header .MiCuenta {
+      width: 37%;
+      margin-top: 7.5%;
+      position: relative;
+      left: 64%;
+    }
+    #backgroundHome {
+      background-size: 150%;
+      background-position-x: 41%;
+      background-position-y: 88%;
+    }
+    #backgroundHome .container-md {
+      width: 96%;
+    }
+    #cabecera, #cabecera2 {
+      min-height: 555px;
+    }
     #posHeader1 .resaltado, #posHeader2 .resaltado {
       position: absolute;
-      bottom: 94%;
+      bottom: 89%;
       right: 43%;
     }
     #posHeader1 nav, #posHeader2 nav {
       float: none;
       position: absolute;
-      top: 2%;
+      top: 6.5%;
       left: 4%;
       visibility: true;
     }
@@ -1058,14 +1088,17 @@ header .lupa, .iconCar, .iconCue{
       left: 10%;
     }
     #cabecera h1 {
-      margin-top: 4.2%;
-      font-size: 22px;
+      margin-top: 9.2%;
+      margin-bottom: 2%;
+      font-size: 66px;
+      left: 40%;
     }
     #cabecera input {
       margin-bottom: 0;
       max-width: 38.5%;
+      padding: 2%;
       left: 71%;
-      font-size: 13px;
+      font-size: 30px;
     }
     #banners1 {
       display: none;
