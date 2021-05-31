@@ -20,7 +20,7 @@ ul {
   background-color: transparent;
   border: 1px solid transparent;
 }
-.page {
+.post, .page {
   margin: 0% !important;
 }
 /* Encabezado **/
