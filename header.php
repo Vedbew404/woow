@@ -58,9 +58,9 @@
             <div class="container-md">
                 <div class="row">
                     <div class="col-sm-8">
-                        <p class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</p>
+                        <b class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</b>
                     </div>
-                    <div class="col-4">
+                    <div class="Lupa col-4">
                         <div class="row">
                             <div class="col-4">
                                 <div class="iconos">
@@ -69,7 +69,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="Carrito col-4">
                                 <div class="iconos">
                                     <a href="#">
                                         <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg"
@@ -78,7 +78,7 @@
                                 </div>
                                 <a class="CarritoCentrado" href="">Carrito</a>
                             </div>
-                            <div class="col-4">
+                            <div class="MiCuenta col-4">
                                 <div class="iconos">
                                     <a href="#">
                                         <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg"
@@ -102,7 +102,7 @@
             <div class="container-sm">
                 <div class="row">
                     <div class="col-sm-8">
-                        <p class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</p>
+                        <b class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</b>
                     </div>
                     <div class="col-4">
                         <div class="row">
@@ -147,9 +147,9 @@
             <?php echo $woow_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
         </p>
         <?php endif; ?> -->
-    <!--</div> .site-branding -->
+        <!--</div> .site-branding -->
 
-    <!-- <nav id="site-navigation" class="main-navigation">
+        <!-- <nav id="site-navigation" class="main-navigation">
         <button class="menu-toggle" aria-controls="primary-menu"
             aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'woow' ); ?></button>
         <?php
@@ -160,5 +160,5 @@
 				)
 			);
 			?> -->
-    </nav><!-- #site-navigation -->
-    </header><!-- #masthead -->
+        </nav><!-- #site-navigation -->
+        </header><!-- #masthead -->

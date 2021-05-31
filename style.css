@@ -970,7 +970,7 @@ textarea {
 
 /* WooW Colombia Styles */
 /* Estilos globales */
-@import '../fonts/stylesheet.css';
+@import './fonts/stylesheet.css';
 
 body {
   font: 12px "Mont";
@@ -993,6 +993,10 @@ ul {
 }
 .post, .page {
   margin: 0% !important;
+}
+.navbar-nav {
+	position: relative;
+	left: 9%;
 }
 /* Encabezado **/
 header{
@@ -1022,10 +1026,11 @@ header a {
   font-size: 12px;
 }
 header .brand{
-  font-size: 1.2em;
+  font-size: 1.6em;
   text-align: left;
   position: relative;
   top: 26%;
+  right: 16%;
 }
 header .lupa, .iconCar, .iconCue{
   margin: auto;
@@ -1037,13 +1042,13 @@ header .lupa, .iconCar, .iconCue{
   display: none;
 }
 #backgroundHome {
-  background-image: url(../img/home.png);
+  background-image: url(./img/home.png);
   background-repeat: no-repeat;
   background-size: 100%;
   font-weight: 800;
 }
 #backgroundTienda {
-  background-image: url(../img/tienda.png);
+  background-image: url(./img/tienda.png);
   background-repeat: no-repeat;
   background-size: 100%;
   font-weight: 800;
@@ -1516,7 +1521,7 @@ header .lupa, .iconCar, .iconCue{
 }
 /* Pagina Nosotros */
 #backgroundNosotros {
-  background-image: url(../img/nosotros.png);
+  background-image: url(./img/nosotros.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1594,7 +1599,7 @@ header .lupa, .iconCar, .iconCue{
 /* Fin Nosotros */
 /* Pagina Contacto */
 #backgroundContacto {
-  background-image: url(../img/contacto.png);
+  background-image: url(./img/contacto.png);
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1706,7 +1711,7 @@ header .lupa, .iconCar, .iconCue{
 /* Fin Contacto */
 /* Pagina Perfil Canino */
 #backgroundPerfilCanino {
-  background-image: url(../img/perfilCanino.png);
+  background-image: url(./img/perfilCanino.png);
   background-repeat: no-repeat;
   background-size: 100%;
   font-weight: 800;
