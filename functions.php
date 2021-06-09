@@ -50,7 +50,7 @@ if ( ! function_exists( 'woow_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
 			array(
-				'menu-1' => esc_html__( 'Primary', 'woow' ),
+				'menu-principal' => esc_html__( 'Primary', 'woow' ),
 			)
 		);
 
@@ -191,3 +191,6 @@ function dcms_set_maintenance_template() {
     	exit;
 	}
 }*/
+
+// Register Custom Navigation Walker
+require_once('wp_bootstrap_navwalker.php');
