@@ -994,9 +994,9 @@ ul {
 .post, .page {
   margin: 0% !important;
 }
-.navbar-nav {
+.menu-menu-principal-container {
 	position: relative;
-	left: 9%;
+	left: 5%;
 }
 /* Encabezado **/
 header{
@@ -1030,7 +1030,6 @@ header .brand{
   text-align: left;
   position: relative;
   top: 26%;
-  right: 16%;
 }
 header .lupa, .iconCar, .iconCue{
   margin: auto;
@@ -1071,8 +1070,8 @@ header .lupa, .iconCar, .iconCue{
   font-size: 16px;
 }
 #posHeader1 li, header li, #posHeader2 li {
-  padding: 0 20px 0 20px;
-  margin-top: -1%;
+  padding: 0 26px 0 26px;
+  margin-top: 0.5%;
 }
 #posHeader1 #marca h1, #posHeader2 #marca h1 {
   margin: 0;
@@ -1108,7 +1107,7 @@ header .lupa, .iconCar, .iconCue{
   border: 1px solid #ffd41f;
   color: #ffffff;
   background: none;
-  padding: 1%;
+  padding: 1.5% 1% 1.5% 1%;
   max-width: 14.5%;
   position: relative;
   left: 74%;
@@ -1125,15 +1124,15 @@ header .lupa, .iconCar, .iconCue{
   font-size: 20px;
 }
 #cabecera2 h1 {
-  margin-top: 20%;
+  margin-top: 25%;
   font-size: 5.8em;
   font-weight: 800;
   position: relative;
   left: 7.2%;
 }
 #cabecera2 h2, #cabeceraProducto h2 {
-  color: #ffffff;
-  margin-top: -8%;
+  color: #f1f1f1;
+  margin-top: -7%;
   margin-bottom: 36%;
   font-family: 'Mont';
   font-weight: normal;
@@ -1538,6 +1537,7 @@ header .lupa, .iconCar, .iconCue{
 #tituloNosotros h1 {
   text-align: center;
   font-weight: normal;
+  font-size: calc(0.7rem + 2.4vw);
   color: #878787;
   width: 60%;
   margin-top: 4%;
@@ -1547,17 +1547,17 @@ header .lupa, .iconCar, .iconCue{
 }
 #MisionVision h1 {
   padding-top: 0%;
-  font-size: 7em;
+  font-size: calc(2rem + 4vw);
   font-weight: 800;
   margin-bottom: -2%;
 }
 #MisionVision .bloqueAzul h1 {
-  padding-top: 6%;
+  padding-top: 13%;
 }
 #MisionVision p {
   padding: 6%;
   padding-top: 0%;
-  font-size: 1.6em;
+  font-size: calc(0.5rem + 1.3vw);
   font-weight: normal;
   margin-top: 2%;
 }
@@ -1603,7 +1603,7 @@ header .lupa, .iconCar, .iconCue{
   background-repeat: no-repeat;
   background-size: 100%;
 }
-#cabeceraContacto h1 {
+#backgroundContacto h1 {
   min-height: 300px;
   font-size: 66px;
   color: #1e9bd6;
@@ -1970,7 +1970,7 @@ header .lupa, .iconCar, .iconCue{
       position: absolute;
       bottom: 90%;
     }
-    .navbar-nav {
+    .menu-menu-principal-container {
       background: #1e9bd6;
     }
     #cabecera h1 {
@@ -1998,6 +1998,7 @@ header .lupa, .iconCar, .iconCue{
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   /* Styles */
+  /* Home */
     header {
       min-height: 101px;
     }
@@ -2022,6 +2023,9 @@ header .lupa, .iconCar, .iconCue{
       position: absolute;
       right: 30%;
       top: 3%;
+    }
+    header img.lupa {
+      filter: invert(0.4) sepia(1) hue-rotate(20deg) saturate(1000%);
     }
     header .Carrito {
       position: absolute;
@@ -2051,13 +2055,12 @@ header .lupa, .iconCar, .iconCue{
       right: 43%;
     }
     #posHeader1 nav, #posHeader2 nav {
-      float: none;
+      width: min-content;
       position: absolute;
       top: 6.5%;
       left: 4%;
-      visibility: true;
     }
-    .navbar-nav {
+    .menu-menu-principal-container {
       background-color: dimgrey;
       position: absolute;
       top: 100%;
@@ -2076,12 +2079,134 @@ header .lupa, .iconCar, .iconCue{
       left: 71%;
       font-size: 30px;
     }
+    #productos .izquierda {
+      display: none;
+    }
+    #productos .derecha {
+      display: none;
+    }
     #banners1 {
       display: none;
     }
     #banners2 {
       display: block;
     }
+  /* Fin Home */
+  /* Tienda */
+    #backgroundTienda {
+      background-size: 140%;
+      background-position-x: 46%;
+      background-position-y: 0%;
+      margin-top: -5.2%;
+      margin-bottom: -12%;
+    }
+    #backgroundTienda .container-md {
+      width: 96%;
+    }
+    #cabecera2 h1 {
+      margin-top: 26%;
+      margin-bottom: 4%;
+      left: 0%;
+    }
+    #cabecera2 h2, #cabeceraProducto h2 {
+      margin-bottom: 15%;
+      font-size: 1.5em;
+      max-width: 60.4%;
+      left: 0%;
+    }
+    #cabecera2 form, #cabeceraProducto form {
+      margin-top: -15%;
+      font-size: 16px;
+      padding: 2%;
+      max-width: 62.5%;
+      left: -1.2%;
+    }
+    #cabecera2 .search, #cabeceraProducto .search {
+      bottom: 20%;
+      left: 12%;
+    }
+    #linea .separNONE {
+      display: none;
+    }
+    #productos .container-md {
+      width: 90%;
+    }
+    #productos .cajita {
+      width: 48%;
+    }
+    #siguientesProductos .left {
+      max-width: 5%;
+      left: 21%;
+    }
+    #siguientesProductos .numeros {
+      font-size: 2.2em;
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+    #siguientesProductos .proActual {
+      font-size: 2.2em;
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+    #siguientesProductos .right {
+      max-width: 5%;
+    }
+  /* Fin Tienda */
+  /* Nosotros */
+    #backgroundNosotros {
+      background-size: 150%;
+      background-position-x: 46%;
+      background-position-y: 0%;
+      margin-top: -5.2%;
+      margin-bottom: -12%;
+    }
+    #backgroundNosotros .container-md {
+      width: 96%;
+    }
+    #cabeceraNosotros h1 {
+      margin-top: 39%;
+      margin-bottom: 4%;
+      left: 0%;
+    }
+    #MisionVision .bloqueAzul h1 {
+      padding-top: 8%;
+    }
+    #MisionVision h1 {
+      margin-bottom: -4%;
+    }
+    #MisionVision .gatoL {
+      right: 0.9%;
+    }
+    #MisionVision .bloqueAzul {
+      right: 1%;
+    }
+    #MisionVision .bloqueAmarillo {
+      left: 1%;
+    }
+    #MisionVision .perroR {
+      left: 0.9%;
+    }
+  /* Fin Nosotros */
+  /* Contacto */
+    #backgroundContacto {
+      background-size: 170%;
+      background-position-x: 62%;
+      background-position-y: 0%;
+      margin-top: -5.2%;
+      margin-bottom: 0%;
+      max-height: 10%;
+    }
+    #backgroundContacto .container-md, #formContacto .container-md {
+      width: 96%;
+    }
+    #backgroundContacto h1{
+      margin-top: 51%;
+      margin-bottom: -10%;
+    }
+    #formContacto h2.h2Sup {
+      margin-top: 6%;
+    }
+  /* Fin Contacto */
   }
   /* iPads (landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
