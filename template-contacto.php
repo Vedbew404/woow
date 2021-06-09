@@ -6,54 +6,14 @@
 ?>
 
 <?php get_header(); ?>
-<section id="posHeader2">
+<section id="backgroundContacto">
     <div class="container-md">
         <div class="row">
-            <div class="col-sm-6">
-                <div id="marca">
-                    <h6>
-                        <span class="resaltado">WOOW</span>
-                    </h6>
-                </div>
-            </div>
-            <div class="col-6">
-                <nav class="nav2 navbar navbar-expand-lg navbar-dark">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav">
-                            <li>
-                                <a class="nav-link" href="./home">Home</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./tienda">Tienda</a>
-                            </li>
-                            <li>
-                                <a class="nav-link" href="./nosotros">Nosotros</a>
-                            </li>
-                            <li>
-                                <a class="actual nav-link" href="./">Contacto</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+            <div class="col-12">
+                <h1>Contacto</h1>
             </div>
         </div>
     </div>
-</section>
-<section id="backgroundContacto">
-    <section id="cabeceraContacto">
-        <div class="container-md">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Contacto</h1>
-                </div>
-            </div>
-        </div>
-    </section>
 </section>
 <section id="linea">
     <div class="container-md">
