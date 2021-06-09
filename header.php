@@ -47,62 +47,15 @@
     <?php wp_body_open(); ?>
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'woow' ); ?></a>
-
-        <!-- <header id="masthead" class="site-header">
-            <div class="site-branding"> -->
         <?php
 			 //the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-        <header id="header2">
-            <div class="container-md">
-                <div class="row">
-                    <div class="col-sm-8">
-                        <b class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</b>
-                    </div>
-                    <div class="Lupa col-4">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="iconos">
-                                    <a class="lupa" href="#">
-                                        <img src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="Carrito col-4">
-                                <div class="iconos">
-                                    <a href="#">
-                                        <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg"
-                                            alt="Carrito">
-                                    </a>
-                                </div>
-                                <a class="CarritoCentrado" href="">Carrito</a>
-                            </div>
-                            <div class="MiCuenta col-4">
-                                <div class="iconos">
-                                    <a href="#">
-                                        <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg"
-                                            alt="Cuenta">
-                                    </a>
-                                </div>
-                                <a href="">Mi Cuenta</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <!-- <h1 class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>"
-                        rel="home"><?php //bloginfo( 'name' ); ?></a></h1> -->
-        <?php
-			else :
+			if ( is_front_page() ) :
 				?>
         <header>
             <div class="container-sm">
                 <div class="row">
                     <div class="col-sm-8">
-                        <b class="brand" href="#">&nbsp;Todo lo que tu mascota necesita en un solo lugar</b>
+                        <p class="brand" href="#"><b>&nbsp;Todo lo que tu mascota necesita en un solo lugar</b></p>
                     </div>
                     <div class="col-4">
                         <div class="row">
@@ -135,30 +88,134 @@
                     </div>
                 </div>
             </div><!-- .site-branding -->
-        </header>
-        <!-- <p class="site-title"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>"
-                        rel="home"><?php //bloginfo( 'name' ); ?></a></p> -->
-        <!-- <?php
-			endif;
-			//$woow_description = get_bloginfo( 'description', 'display' );
-			if ( $woow_description || is_customize_preview() ) :
-				?>
-        <p class="site-description">
-            <?php echo $woow_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>
-        </p>
-        <?php endif; ?> -->
-        <!--</div> .site-branding -->
-
-        <!-- <nav id="site-navigation" class="main-navigation">
-        <button class="menu-toggle" aria-controls="primary-menu"
-            aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'woow' ); ?></button>
-        <?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-principal',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?> -->
-        </nav><!-- #site-navigation -->
         </header><!-- #masthead -->
+        <section id="backgroundHome">
+            <div id="posHeader1" class="container-md">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="marca">
+                            <h6>
+                                <span class="resaltado">WOOW</span>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <nav id="site-navigation" class="nav2 navbar navbar-expand-lg navbar-dark main-navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerWOOW" aria-controls="navbarTogglerWOOW"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <?php
+                            wp_nav_menu(
+                                array(
+                                    'theme_location' => 'menu-principal',
+                                    'menu_id'        => 'primary-menu',
+                                )
+                            );
+                            ?>
+                        </nav><!-- #site-navigation -->
+                    </div>
+                </div>
+            </div>
+            <div id="cabecera" class="container-md">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Lorem ipsum
+                        </h1>
+                        <input type="submit" value="VER AHORA">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php
+			else :
+				?>
+        <header>
+            <div class="container-sm">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p class="brand" href="#"><b>&nbsp;Todo lo que tu mascota necesita en un solo lugar</b></p>
+                    </div>
+                    <div class="col-4">
+                        <div class="row">
+                            <div class="Lupa col-4">
+                                <div class="iconos">
+                                    <a href="#">
+                                        <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="Carrito col-4">
+                                <div class="iconos">
+                                    <a href="#">
+                                        <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg"
+                                            alt="Carrito">
+                                    </a>
+                                </div>
+                                <a href="">Carrito</a>
+                            </div>
+                            <div class="MiCuenta col-4">
+                                <div class="iconos">
+                                    <a href="#">
+                                        <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg"
+                                            alt="Cuenta">
+                                    </a>
+                                </div>
+                                <a href="">Mi Cuenta</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- .site-branding -->
+        </header><!-- #masthead -->
+        <section id="posHeader2">
+            <div class="container-md">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div id="marca">
+                            <h6>
+                                <span class="resaltado">WOOW</span>
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="col-6">
+
+                        <div class="navbar navbar-default">
+                            <div class="container">
+                                <!-- <div class="visible-xs">
+                                    <?php get_search_form();?>
+                                </div> -->
+
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <!-- <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                        data-target=".navigation-menu">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                </div>navbar-header -->
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <nav class="collapse navbar-collapse navigation-menu" role="navigation">
+                                    <?php wp_nav_menu( array(
+                                        'menu' => 'primary-menu',
+                                        'theme_location' => 'menu-principal',
+                                        'depth' => 2,
+                                        'container' => '',
+                                        'container_class' => '',
+                                        'menu_class' => 'nav navbar-nav',
+                                        'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+                                        'walker' => new wp_bootstrap_navwalker())
+                                    );?>
+                                </nav><!-- navigation -->
+                            </div><!-- container -->
+                        </div><!-- navbar-default -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <?php
+			endif; ?>
