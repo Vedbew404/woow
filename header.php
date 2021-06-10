@@ -107,14 +107,14 @@
                                 <span class="navbar-toggler-icon"></span>
                             </button>
                             <?php
-                            wp_nav_menu(
-                                array(
-                                    'theme_location' => 'menu-principal',
-                                    'menu_id'        => 'primary-menu',
-                                )
-                            );
+                                wp_nav_menu(
+                                    array(
+                                        'theme_location' => 'menu-principal',
+                                        'menu_id'        => 'primary-menu',
+                                    )
+                                );
                             ?>
-                        </nav><!-- #site-navigation -->
+                        </nav><!-- navigation -->
                     </div>
                 </div>
             </div>
@@ -180,42 +180,26 @@
                         </div>
                     </div>
                     <div class="col-6">
-
-                        <div class="navbar navbar-default">
-                            <div class="container">
-                                <!-- <div class="visible-xs">
-                                    <?php get_search_form();?>
-                                </div> -->
-
-                                <!-- Brand and toggle get grouped for better mobile display -->
-                                <!-- <div class="navbar-header">
-                                    <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                        data-target=".navigation-menu">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                        <span class="icon-bar"></span>
-                                    </button>
-                                </div>navbar-header -->
-
-                                <!-- Collect the nav links, forms, and other content for toggling -->
-                                <nav class="collapse navbar-collapse navigation-menu" role="navigation">
-                                    <?php wp_nav_menu( array(
-                                        'menu' => 'primary-menu',
+                        <nav id="site-navigation" class="nav2 navbar navbar-expand-lg navbar-dark main-navigation">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarTogglerWOOW" aria-controls="navbarTogglerWOOW"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <?php
+                                wp_nav_menu(
+                                    array(
                                         'theme_location' => 'menu-principal',
-                                        'depth' => 2,
-                                        'container' => '',
-                                        'container_class' => '',
-                                        'menu_class' => 'nav navbar-nav',
-                                        'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-                                        'walker' => new wp_bootstrap_navwalker())
-                                    );?>
-                                </nav><!-- navigation -->
-                            </div><!-- container -->
+                                        'menu_id'        => 'primary-menu',
+                                    )
+                                );
+                            ?>
+                        </nav><!-- navigation -->
+                    </div>
                         </div><!-- navbar-default -->
                     </div>
                 </div>
             </div>
         </section>
         <?php
-			endif; ?>
+		endif; ?>

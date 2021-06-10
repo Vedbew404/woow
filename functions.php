@@ -191,6 +191,3 @@ function dcms_set_maintenance_template() {
     	exit;
 	}
 }*/
-
-// Register Custom Navigation Walker
-require_once('wp_bootstrap_navwalker.php');
