@@ -703,9 +703,7 @@ textarea {
 	display: block;
 }
 
-/* !!! */
-/* Impontante "QUITAR" para el menu responsive */
-/* @media screen and (min-width: 37.5em) {
+@media screen and (min-width: 37.5em) {
 
 	.menu-toggle {
 		display: none;
@@ -714,9 +712,7 @@ textarea {
 	.main-navigation ul {
 		display: flex;
 	}
-} */
-/* !!! */
-/* !!! */
+}
 
 .site-main .comment-navigation,
 .site-main
@@ -2091,6 +2087,15 @@ header .lupa, .iconCar, .iconCue{
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   /* Styles */
+  /* Impontante para el menu responsive */
+  @media screen and (min-width: 37.5em) {
+    .menu-toggle {
+      display: block;
+    }
+    .main-navigation ul {
+      display: none;
+    }
+  }
   /* Home */
     header {
       min-height: 101px;
