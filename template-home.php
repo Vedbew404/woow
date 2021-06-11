@@ -23,54 +23,118 @@
                 <div class="items">
                     <div class="row">
                         <div class="izquierda col-sm-1">
-                            <a href="">
+                            <a href="#" class="left-arrow">
                                 <img src="../wp-content/themes/woow/img/izquierda.png" alt="">
                             </a>
                         </div>
-                        <div class="caja col-sm-3">
-                            <a href="single.php">
-                                <div class="imagencita">
-                                    <img src="../wp-content/themes/woow/img/single.png">
-                                    <img class="previa previaSlide" src="../wp-content/themes/woow/img/previa.svg">
+                        <div id="carrusel" class="col-sm-10">
+                            <div class="carrusel">
+                                <div class="product" id="product_0">
+                                    <div class="caja1 col-sm-3">
+                                        <a href="single.php">
+                                            <div class="imagencita">
+                                                <img src="../wp-content/themes/woow/img/single.png">
+                                                <img class="previa previaSlide"
+                                                    src="../wp-content/themes/woow/img/previa.svg">
+                                            </div>
+                                            <h5 class="separadorsito">.</h5>
+                                            <h3 class="tituloproducto">Placas ID Smart
+                                            </h3>
+                                            <p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+                                                amet, consectetuer adipiscing elit, sed diam nonummy.
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
-                                <h5 class="separadorsito">.</h5>
-                                <h3 class="tituloproducto">Placas ID Smart
-                                </h3>
-                                <p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
-                                    amet, consectetuer adipiscing elit, sed diam nonummy.
-                                </p>
-                            </a>
-                        </div>
-                        <div class="caja col-sm-3">
-                            <a href="single.php">
-                                <div class="imagencita">
-                                    <img src="../wp-content/themes/woow/img/PañoletaAzul.png">
-                                    <img class="previa previaSlide" src="../wp-content/themes/woow/img/previa.svg">
+                                <div class="product" id="product_1">
+                                    <div class="caja1 col-sm-3">
+                                        <a href="single.php">
+                                            <div class="imagencita">
+                                                <img src="../wp-content/themes/woow/img/PañoletaAzul.png">
+                                                <img class="previa previaSlide"
+                                                    src="../wp-content/themes/woow/img/previa.svg">
+                                            </div>
+                                            <h5 class="separadorsito">.</h5>
+                                            <h3 class="tituloproducto">Pañoleta - azul
+                                            </h3>
+                                            <p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+                                                amet, consectetuer adipiscing elit, sed diam nonummy.
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
-                                <h5 class="separadorsito">.</h5>
-                                <h3 class="tituloproducto">Pañoleta - azul
-                                </h3>
-                                <p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
-                                    amet, consectetuer adipiscing elit, sed diam nonummy.
-                                </p>
-                            </a>
-                        </div>
-                        <div class="caja col-sm-3">
-                            <a href="single.php">
-                                <div class="imagencita">
-                                    <img src="../wp-content/themes/woow/img/ArnesFloral.png">
-                                    <img class="previa previaSlide" src="../wp-content/themes/woow/img/previa.svg">
+                                <div class="product" id="product_2">
+                                    <div class="caja1 col-sm-3">
+                                        <a href="single.php">
+                                            <div class="imagencita">
+                                                <img src="../wp-content/themes/woow/img/ArnesFloral.png">
+                                                <img class="previa previaSlide"
+                                                    src="../wp-content/themes/woow/img/previa.svg">
+                                            </div>
+                                            <h5 class="separadorsito">.</h5>
+                                            <h3 class="tituloproducto">Arnes Floral
+                                            </h3>
+                                            <p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+                                                amet, consectetuer adipiscing elit, sed diam nonummy.
+                                            </p>
+                                        </a>
+                                    </div>
                                 </div>
-                                <h5 class="separadorsito">.</h5>
-                                <h3 class="tituloproducto">Arnes Floral
-                                </h3>
-                                <p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
-                                    amet, consectetuer adipiscing elit, sed diam nonummy.
-                                </p>
-                            </a>
+                                <div class="product" id="product_3">
+                                    <div class="caja1 col-sm-3">
+                                        <a href="single.php">
+                                            <div class="imagencita">
+                                                <img src="../wp-content/themes/woow/img/single.png">
+                                                <img class="previa previaSlide"
+                                                    src="../wp-content/themes/woow/img/previa.svg">
+                                            </div>
+                                            <h5 class="separadorsito">.</h5>
+                                            <h3 class="tituloproducto">Placas ID Smart
+                                            </h3>
+                                            <p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+                                                amet, consectetuer adipiscing elit, sed diam nonummy.
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product" id="product_4">
+                                    <div class="caja1 col-sm-3">
+                                        <a href="single.php">
+                                            <div class="imagencita">
+                                                <img src="../wp-content/themes/woow/img/PañoletaAzul.png">
+                                                <img class="previa previaSlide"
+                                                    src="../wp-content/themes/woow/img/previa.svg">
+                                            </div>
+                                            <h5 class="separadorsito">.</h5>
+                                            <h3 class="tituloproducto">Pañoleta - azul
+                                            </h3>
+                                            <p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+                                                amet, consectetuer adipiscing elit, sed diam nonummy.
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="product" id="product_5">
+                                    <div class="caja1 col-sm-3">
+                                        <a href="single.php">
+                                            <div class="imagencita">
+                                                <img src="../wp-content/themes/woow/img/ArnesFloral.png">
+                                                <img class="previa previaSlide"
+                                                    src="../wp-content/themes/woow/img/previa.svg">
+                                            </div>
+                                            <h5 class="separadorsito">.</h5>
+                                            <h3 class="tituloproducto">Arnes Floral
+                                            </h3>
+                                            <p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+                                                amet, consectetuer adipiscing elit, sed diam nonummy.
+                                            </p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="derecha col-sm-1">
-                            <a href="">
+                            <a href="#" class="right-arrow">
                                 <img src="../wp-content/themes/woow/img/derecha.png" alt="">
                             </a>
                         </div>
