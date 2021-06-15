@@ -153,7 +153,7 @@
                                             alt="Carrito">
                                     </a>
                                 </div>
-                                <a href="">Carrito</a>
+                                <a href="http://woowcolombia.test/carrito/">Carrito</a>
                             </div>
                             <div class="MiCuenta col-4">
                                 <div class="iconos">

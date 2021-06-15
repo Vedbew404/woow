@@ -1463,10 +1463,15 @@ header .lupa, .iconCar, .iconCue{
   display: block;
   margin-bottom: 6%;
 }
-#Product img{
-  width: 90%;
+#Product img, .wp-post-image {
+  width: 71% !important;
   position: relative;
-  left: 18%;
+  left: 38%;
+}
+.summary {
+  position: relative;
+  right: 4%;
+  width: 40% !important;
 }
 #Product .botonL{
   float: right;
@@ -1505,15 +1510,15 @@ header .lupa, .iconCar, .iconCue{
   top: -7.5%;
   left: 0.5%;
 }
-#Product h1{
+#Product h1, .product_title{
   font-size: calc(1rem + 1.5vw);
   color: #878787;
   margin: 0% !important;
 }
-#Product h2{
+#Product h2, .woocommerce-Price-amount {
   font-size: calc(0.9rem + 1.5vw);
 }
-#Product p{
+#Product p, .woocommerce-product-details__short-description {
   font-size: calc(0.7rem + 1.1vw);
   color: #bbbbbb;
 }
@@ -1564,7 +1569,7 @@ header .lupa, .iconCar, .iconCue{
   margin-top: 2.4%;
   margin-left: 14%;
 }
-.botonCarrito {
+.botonCarrito, .single_add_to_cart_button {
   float: left;
   background: #1e9bd6 !important;
   font-size: calc(0.6rem + 1vw);
@@ -1581,7 +1586,7 @@ header .lupa, .iconCar, .iconCue{
   position: relative;
   left: 10%;
 }
-.botonCarrito:hover {
+.botonCarrito:hover, .single_add_to_cart_button:hover {
   background: #ffd41f;
   color: #333333;
 }

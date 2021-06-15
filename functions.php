@@ -182,7 +182,6 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
 
-
 /*add_action('template_redirect', 'dcms_set_maintenance_template');
 
 function dcms_set_maintenance_template() {
@@ -191,3 +190,49 @@ function dcms_set_maintenance_template() {
     	exit;
 	}
 }*/
+
+//Pa algo era esto...
+// First unhook the WooCommerce wrappers:
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+
+// Then hook in your own functions to display the wrappers your theme requires:
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+    echo '<section id="main">';
+}
+
+function my_theme_wrapper_end() {
+    echo '</section>';
+}
+//:D...:D...:D...:D...:D...:D...:D
+
+
+//Compatibilidad con Woocommerce
+function my_theme_setup() {
+    add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'my_theme_setup' );
+
+// Eliminar los CSS de WooCommerce uno por uno
+/*add_filter( 'woocommerce_enqueue_styles', 'woocommerce_dequeue_styles' );
+function woocommerce_dequeue_styles( $enqueue_styles ) {
+	unset( $enqueue_styles['woocommerce-general'] );	// Remove the gloss
+	unset( $enqueue_styles['woocommerce-layout'] );		// Remove the layout
+	unset( $enqueue_styles['woocommerce-smallscreen'] );	// Remove the smallscreen optimisation
+	return $enqueue_styles;
+}*/
+
+// Eliminar todos los CSS de WooCommerce de golpe
+// add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+
+function formulario_single(){
+	echo "Busca lo que necesitas para tu mascota";
+	
+	
+}
+add_action('woocommerce_before_single_product', 'formulario_single');
