@@ -1465,14 +1465,24 @@ header .lupa, .iconCar, .iconCue{
 }
 #Product img, .wp-post-image {
   width: 71% !important;
-  position: relative;
-  left: 38%;
 }
 .summary {
   position: relative;
   right: 4%;
   width: 40% !important;
 }
+
+.woocommerce-product-gallery__image {
+  position: relative;
+  left: 38%;
+}
+
+
+
+
+
+
+
 #Product .botonL{
   float: right;
   width: 38px;
