@@ -1185,42 +1185,37 @@ header .lupa, .iconCar, .iconCue{
 }
 #cabecera2 h1 {
   margin-top: 25%;
+  margin-bottom: -3%;
   font-size: 5.8em;
   font-weight: 800;
   position: relative;
   left: 7.2%;
 }
-#cabecera2 h2, #cabeceraProducto h2 {
-  color: #f1f1f1;
-  margin-top: -7%;
-  margin-bottom: 36%;
-  font-family: 'Mont';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1.2em;
-  padding: 1.5%;
-  max-width: 40.4%;
+#backgroundTienda #product_search_widget-2 {
   position: relative;
-  left: 6.2%;
+  left: -9%;
+  margin-bottom: 13%;
 }
-#cabecera2 form, #cabeceraProducto form {
+#backgroundTienda .widget-title {
+  color: white !important;
+}
+#Search form, #Search form {
   background-color: #ffffff;
   border-radius: 15px;
-  margin-top: -36.3%;
-  margin-bottom: 18.5%;
+  margin-top: 5.5%;
   font-size: 14px;
   padding: 1.5%;
   max-width: 50.5%;
   position: relative;
   left: 5.8%;
 }
-#cabecera2 .lupita, #cabeceraProducto .lupita {
+#cabecera2 .lupita, #Search .lupita {
   margin-top: -2%;
   margin-bottom: -2.5%;
   width: 32px;
   height: 38px;
 }
-#cabecera2 .search, #cabeceraProducto .search {
+#cabecera2 .search, #Search .search {
   font-family: 'Mont';
   font-weight: normal;
   font-style: normal;
@@ -1230,27 +1225,26 @@ header .lupa, .iconCar, .iconCue{
   border-radius: 5px;
   border: 0;
   position: absolute;
-  bottom: 24%;
+  bottom: -18%;
   left: 11%;
 }
-#cabecera2 .submit, #cabeceraProducto .submit {
+#cabecera2 .submit, #Search .submit {
   position: absolute;
   top: 30%;
   left: 88%;
 }
-#cabecera2 p, #cabeceraProducto p {
+#cabecera2 p, #Search p {
   font-size: 20px;
 }
-#cabeceraProducto h2{
-  color: #878787;
-  margin-top: 3%;
-}
-#cabeceraProducto form {
+#Search form {
   background: #f1f1f1;
   margin-bottom: 4.5%;
 }
-#cabeceraProducto .search {
+#Search .search {
   background: #f1f1f1;
+}
+#linea {
+  margin-bottom: 3%;
 }
 #linea .container-md {
   text-align: center;
@@ -1302,12 +1296,6 @@ header .lupa, .iconCar, .iconCue{
   border-radius: 9px;
   box-shadow: 1px 1px 11px #8b8b8b; 
 }
-
-
-
-
-
-
 #productos .caja1 {
   text-align: center;
   padding: 0.5%;
@@ -1325,12 +1313,6 @@ header .lupa, .iconCar, .iconCue{
   width: 100%;
   height: 100%;
 }
-
-
-
-
-
-
 #productos .caja {
   width: 24.5%;
 }
@@ -1476,8 +1458,22 @@ header .lupa, .iconCar, .iconCue{
   position: relative;
   left: 38%;
 }
-
-
+.widget-title {
+  color: #878787;
+  margin-top: 2%;
+  margin-bottom: -5%;
+  font-family: 'Mont';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+  padding: 1.5%;
+  max-width: 40.4%;
+  position: relative;
+  left: 15.2%;
+}
+#Search {
+  min-height: 150px;
+}
 
 
 
@@ -1509,17 +1505,31 @@ header .lupa, .iconCar, .iconCue{
   position: absolute;
   right: 18%;
 }
-#Product .separadore{
+
+
+
+
+
+
+
+
+.separadore{
   background: #414141;
   border: #414141;
   border-radius: 11%;
-  height: 0.4%;
-  width: 35%;
+  height: 0.2%;
+  width: 9%;
   margin-top: 4%;
   position: absolute;
-  top: -7.5%;
-  left: 0.5%;
+  top: -4.5%;
+  left: 56%;
 }
+
+
+
+
+
+
 #Product h1, .product_title{
   font-size: calc(1rem + 1.5vw);
   color: #878787;
@@ -1529,7 +1539,7 @@ header .lupa, .iconCar, .iconCue{
   font-size: calc(0.9rem + 1.5vw);
 }
 #Product p, .woocommerce-product-details__short-description {
-  font-size: calc(0.7rem + 1.1vw);
+  font-size: calc(0.7rem + 1vw);
   color: #bbbbbb;
 }
 #Product label{
@@ -2223,22 +2233,18 @@ header .lupa, .iconCar, .iconCue{
       margin-bottom: 4%;
       left: 0%;
     }
-    #cabecera2 h2, #cabeceraProducto h2 {
+    #cabecera2 h2, #Search h2 {
       margin-bottom: 15%;
       font-size: 1.5em;
       max-width: 60.4%;
       left: 0%;
     }
-    #cabecera2 form, #cabeceraProducto form {
-      margin-top: -15%;
+    #cabecera2 form, #Search form {
+      margin-top: 15%;
       font-size: 16px;
       padding: 2%;
       max-width: 62.5%;
       left: -1.2%;
-    }
-    #cabecera2 .search, #cabeceraProducto .search {
-      bottom: 20%;
-      left: 12%;
     }
     #linea .separNONE {
       display: none;

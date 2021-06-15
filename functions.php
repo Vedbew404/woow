@@ -229,25 +229,26 @@ function woocommerce_dequeue_styles( $enqueue_styles ) {
 // Eliminar todos los CSS de WooCommerce de golpe
 // add_filter( 'woocommerce_enqueue_styles', '__return_false' );
 
-
+// Formulario del single
 function formulario_single(){
-	echo '
-	<section id="cabeceraProducto">
-		<div class="container-md">
-			<div class="row">
-				<div class="col-12">
-					<h2>Busca lo que necesitas para tu mascota</h2>
-					<form action="../../form-result.php" method="post" target="_blank">
-						<img class="lupita" src="../wp-content/themes/woow/img/lupa.svg">
-						<input class="search" type="search" name="busqueda" placeholder="Alimento para perros">
-						<a id="buscar" class="btnBusqueda" href="#">
-							<img src="../wp-content/themes/woow/img\playbusqueda.svg" alt="Icono de busqueda">
-						</a>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>';
 	get_sidebar();
 }
 add_action('woocommerce_before_single_product', 'formulario_single');
+
+// Botones para moverse entre los productos
+function moverse_entre_productos(){
+	echo '
+		<div>
+			<a href="#">
+				<img class="botonR" src="../wp-content/themes/woow/img/right.svg" alt="Boton producto siguiente">
+			</a>
+			<a href="#">
+				<img class="botonL" src="../wp-content/themes/woow/img/left.svg" alt="Boton producto anterior">
+			</a>
+		</div>
+		<span class="separadore"></span>
+	';
+}
+add_action('woocommerce_before_single_product_summary', 'moverse_entre_productos');
+
+woocommerce_after_shop_loop_item
