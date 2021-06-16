@@ -260,7 +260,7 @@ function short_desc_on_product_archives() {
 
 function vista_previa_hover() {
 	echo '
-	<img class="previa" src="../wp-content/themes/woow/img/previa.svg">
+	<img class="previa2" src="../wp-content/themes/woow/img/previa.svg">
 	';
 }
 	add_action('woocommerce_before_shop_loop_item_title', 'vista_previa_hover');
@@ -272,3 +272,83 @@ function linea_decorativa_tienda() {
 	';
 }
   add_action('woocommerce_before_shop_loop_item_title', 'linea_decorativa_tienda');
+
+
+
+  function njengah_pagination() {
+	// print_r($wp_query);
+    if( is_page(63) )
+
+	echo'si es la tienda';
+
+        return;
+
+     global $wp_query;
+
+     $paged = get_query_var( 'paged' ) ? absint( get_query_var( 'paged' ) ) : 1;
+
+    $max   = intval( $wp_query->max_num_pages );
+
+    /** Add current page to the array */
+
+    if ( $paged >= 1 )
+
+        $links[] = $paged;
+
+    /** Add the pages around the current page to the array */
+
+    if ( $paged >= 5 ) {
+
+        $links[] = $paged - 1;
+
+        $links[] = $paged - 2;
+
+    }
+    echo '<div class="navigation"><ul>' . "\n";
+
+    /** Previous Post Link */
+
+    if ( get_previous_posts_link() )
+
+        printf( '<li>%s</li>' . "\n", get_previous_posts_link() );
+
+    /** Link to first page */
+
+    if ( ! in_array( 1, $links ) ) {
+
+        $class = 1 == $paged ? ' class="active"' : '';
+
+        printf( '<li%s><a href="%s">%s</a></li>' . "\n", $class, esc_url( get_pagenum_link( 1 ) ), '1' );
+
+    }
+    /** Link to current page*/
+
+    sort( $links );
+
+    foreach ( (array) $links as $link ) {
+
+        $class = $paged == $link ? ' class="active"' : '';
+
+    }
+
+    /** Link to last page,*/
+
+    if ( ! in_array( $max, $links ) ) {
+
+        if ( ! in_array( $max - 1, $links ) )
+
+            echo '<li>…</li>' . "\n";
+        $class = $paged == $max ? ' class="active"' : '';
+
+    }
+
+    /** Next Post Link */
+
+    if ( get_next_posts_link() )
+
+        printf( '<li>%s</li>' . "\n", get_next_posts_link() );
+    echo '</ul></div>' . "\n";
+
+}
+
+add_action('woocommerce_after_main_content', 'njengah_pagination');
