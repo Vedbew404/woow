@@ -117,7 +117,7 @@ $(document).ready(function() {
     $('.right-arrow').on('click', function() {
         if (numImages > current + 3) {
             current = current + 1;
-        } else {z
+        } else {
             current = 0;
         }
 

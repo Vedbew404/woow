@@ -1404,9 +1404,27 @@ header .lupa, .iconCar, .iconCue{
   align-content: center;
   margin-top: 5%;
 }
-#siguientesProductos .numeros{
+.woocommerce nav.woocommerce-pagination ul {
+  display: block;
+  padding: 0;
+  border: 0px solid white;
+  border-right: 0;
+  margin: 0px;
+}
+.woocommerce nav.woocommerce-pagination ul li {
+  border-right: 0px solid white;
+  overflow: inherit;
+}
+a.page-numbers {
+  color: #000000 !important;
+}
+nav.woocommerce-pagination ul li span.current {
+  background: #1e9bd6 !important;
+  color: #ffffff !important;
+  border-radius: 50%;
+}
+#siguientesProductos .numeros, .woocommerce-pagination li {
   float: left;
-  color: #000000;
   font-size: 1.3em;
   position: relative;
   left: 45.5%;
@@ -1415,10 +1433,8 @@ header .lupa, .iconCar, .iconCue{
   padding-right: 0.7%;
 }
 #siguientesProductos .proActual{
-  background: #1e9bd6;
   border-radius: 50%;
   float: left;
-  color: #ffffff;
   font-size: 1.3em;
   position: relative;
   left: 45.5%;
@@ -1429,16 +1445,29 @@ header .lupa, .iconCar, .iconCue{
 #siguientesProductos a{
   text-decoration: none;
 }
-#siguientesProductos .numeros:hover, #siguientesProductos .proActual:hover{
+.woocommerce nav.woocommerce-pagination ul li {
+  margin: 0.25%;
+}
+.woocommerce nav.woocommerce-pagination ul li a.page-numbers:hover {
+  border-radius: 50% !important;
+}
+.woocommerce nav.woocommerce-pagination ul li a.prev {
+  background-color: white;
+  border-color: white;
+}
+#siguientesProductos .numeros:hover,
+#siguientesProductos .proActual:hover,
+.woocommerce-pagination li:hover {
   background-color: #878787;
-  border-radius: 50%;
+  border-radius: 50% !important;
 }
-#siguientesProductos .left{
-  max-width: 2%;
-  position: relative;
-  left: 33%;
+#productos .left{
+  max-width: 191%;
+  position: absolute;
+  left: -90%;
+  bottom: -95%;
 }
-#siguientesProductos .right{
+#productos .right{
   max-width: 2%;
   position: relative;
   left: 44.5%;
@@ -2293,6 +2322,9 @@ header .lupa, .iconCar, .iconCue{
     }
     #siguientesProductos .right {
       max-width: 5%;
+    }
+    .woocommerce-Reviews {
+      padding: 3% !important;
     }
   /* Fin Tienda */
   /* Nosotros */
