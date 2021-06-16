@@ -1353,7 +1353,7 @@ header .lupa, .iconCar, .iconCue{
 #productos .previa {
   position: absolute;
   right: 0;
-  top: 2%;
+  top: 47%;
   display: none;
 }
 #productos a:hover .previa {
@@ -1371,7 +1371,8 @@ header .lupa, .iconCar, .iconCue{
   width: 28%;
   position: relative;
   left: 6%;
-  margin-top: 11%;
+  margin-top: 4%;
+  margin-bottom: -4%;
 }
 /* Banners */
 #banners1 {
@@ -1640,6 +1641,12 @@ header .lupa, .iconCar, .iconCue{
 }
 #imgsProduct .descripcionHTML h1 {
   font-size: calc(2.2rem + 5vw);
+}
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab {
+  padding: 3%;
+}
+.related.products {
+  padding: 5%;
 }
 /* Pagina Nosotros */
 #backgroundNosotros {

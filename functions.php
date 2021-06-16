@@ -258,4 +258,17 @@ function short_desc_on_product_archives() {
   }
   add_action( 'woocommerce_after_shop_loop_item_title', 'short_desc_on_product_archives', 40 );
 
-  
+function vista_previa_hover() {
+	echo '
+	<img class="previa" src="../wp-content/themes/woow/img/previa.svg">
+	';
+}
+	add_action('woocommerce_before_shop_loop_item_title', 'vista_previa_hover');
+
+// Barra decorativa sobre el titulo
+function linea_decorativa_tienda() {
+	echo '
+	<h5 class="separadorsito">.</h5>
+	';
+}
+  add_action('woocommerce_before_shop_loop_item_title', 'linea_decorativa_tienda');
