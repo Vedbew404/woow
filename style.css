@@ -1286,15 +1286,20 @@ header .lupa, .iconCar, .iconCue{
   position: relative;
   margin-top: 23%;
 }
-#productos .caja, #productos .cajita {
+#productos .caja, #productos .cajita, #productos .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple {
   text-align: center;
   padding: 0.5%;
-  margin: 3% 1% 1% 1%;
+  margin: 3% 1% 1% 1% !important;
   position: relative;
   display: block;
   border: 1px solid #ccc;
   border-radius: 9px;
   box-shadow: 1px 1px 11px #8b8b8b; 
+  height: 501px;
+}
+.woocommerce ul.products li.product a img {
+  width: 92.5%;
+  margin: 1em;
 }
 #productos .caja1 {
   text-align: center;
@@ -1324,17 +1329,21 @@ header .lupa, .iconCar, .iconCue{
   height: 100%;
 }
 #productos .tituloproducto,
-#productos .descripcionproducto {
+#productos .descripcionproducto,
+#productos .woocommerce-loop-product__title,
+.product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p {
   text-align: left !important;
   padding-right: 6%;
   padding-left: 6%;
 }
-#productos .tituloproducto{
+#productos .tituloproducto,
+#productos .woocommerce-loop-product__title {
   font-size: calc(0.5rem + 1.3vw);
   margin-top: 3%;
 }
-#productos .descripcionproducto{
-  font-size: calc(0.3rem + 1vw);
+#productos .descripcionproducto,
+.product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p {
+  font-size: calc(0.3rem + 0.8vw);
 }
 #productos .imagencita {
   padding: 0 24 0 24;

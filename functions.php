@@ -251,4 +251,11 @@ function moverse_entre_productos(){
 }
 add_action('woocommerce_before_single_product_summary', 'moverse_entre_productos');
 
-woocommerce_after_shop_loop_item
+// Mostrar descripcion en productos de la Tienda
+function short_desc_on_product_archives() {
+     
+	the_excerpt();   
+  }
+  add_action( 'woocommerce_after_shop_loop_item_title', 'short_desc_on_product_archives', 40 );
+
+  
