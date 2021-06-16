@@ -62,14 +62,14 @@
                             <div class="Lupa col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
+                                        <img class="lupa" src="http://woowcolombia.test/wp-content/uploads/2021/06/lupa.svg" alt="Buscar">
                                     </a>
                                 </div>
                             </div>
                             <div class="Carrito col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg"
+                                        <img class="iconCar" src="http://woowcolombia.test/wp-content/uploads/2021/06/carrito.svg"
                                             alt="Carrito">
                                     </a>
                                 </div>
@@ -78,7 +78,7 @@
                             <div class="MiCuenta col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg"
+                                        <img class="iconCue" src="http://woowcolombia.test/wp-content/uploads/2021/06/cuenta.svg"
                                             alt="Cuenta">
                                     </a>
                                 </div>
@@ -142,14 +142,14 @@
                             <div class="Lupa col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="lupa" src="../wp-content/themes/woow/img/lupa.svg" alt="Buscar">
+                                        <img class="lupa" src="http://woowcolombia.test/wp-content/uploads/2021/06/lupa.svg" alt="Buscar">
                                     </a>
                                 </div>
                             </div>
                             <div class="Carrito col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="iconCar" src="../wp-content/themes/woow/img/carrito.svg"
+                                        <img class="iconCar" src="http://woowcolombia.test/wp-content/uploads/2021/06/carrito.svg"
                                             alt="Carrito">
                                     </a>
                                 </div>
@@ -158,7 +158,7 @@
                             <div class="MiCuenta col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="iconCue" src="../wp-content/themes/woow/img/cuenta.svg"
+                                        <img class="iconCue" src="http://woowcolombia.test/wp-content/uploads/2021/06/cuenta.svg"
                                             alt="Cuenta">
                                     </a>
                                 </div>

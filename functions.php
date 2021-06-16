@@ -239,11 +239,11 @@ add_action('woocommerce_before_single_product', 'formulario_single');
 function moverse_entre_productos(){
 	echo '
 		<div>
-			<a href="#">
-				<img class="botonR" src="../wp-content/themes/woow/img/right.svg" alt="Boton producto siguiente">
+			<a class="aDeBotonL" href="#">
+				<img class="botonL" src="http://woowcolombia.test/wp-content/uploads/2021/06/left.svg" alt="Boton producto anterior">
 			</a>
-			<a href="#">
-				<img class="botonL" src="../wp-content/themes/woow/img/left.svg" alt="Boton producto anterior">
+			<a class="aDeBotonR" href="#">
+				<img class="botonR" src="http://woowcolombia.test/wp-content/uploads/2021/06/right.svg" alt="Boton producto siguiente">
 			</a>
 		</div>
 		<span class="separadore"></span>
@@ -275,7 +275,7 @@ function linea_decorativa_tienda() {
 
 
 
-  function njengah_pagination() {
+  /*function njengah_pagination() {
 	// print_r($wp_query);
     if( is_page(63) )
 
@@ -291,13 +291,13 @@ function linea_decorativa_tienda() {
 
     /** Add current page to the array */
 
-    if ( $paged >= 1 )
+    /*if ( $paged >= 1 )
 
         $links[] = $paged;
 
     /** Add the pages around the current page to the array */
 
-    if ( $paged >= 5 ) {
+    /*if ( $paged >= 5 ) {
 
         $links[] = $paged - 1;
 
@@ -308,13 +308,13 @@ function linea_decorativa_tienda() {
 
     /** Previous Post Link */
 
-    if ( get_previous_posts_link() )
+    /*if ( get_previous_posts_link() )
 
         printf( '<li>%s</li>' . "\n", get_previous_posts_link() );
 
     /** Link to first page */
 
-    if ( ! in_array( 1, $links ) ) {
+    /*if ( ! in_array( 1, $links ) ) {
 
         $class = 1 == $paged ? ' class="active"' : '';
 
@@ -323,7 +323,7 @@ function linea_decorativa_tienda() {
     }
     /** Link to current page*/
 
-    sort( $links );
+    /*sort( $links );
 
     foreach ( (array) $links as $link ) {
 
@@ -333,7 +333,7 @@ function linea_decorativa_tienda() {
 
     /** Link to last page,*/
 
-    if ( ! in_array( $max, $links ) ) {
+    /*if ( ! in_array( $max, $links ) ) {
 
         if ( ! in_array( $max - 1, $links ) )
 
@@ -344,11 +344,167 @@ function linea_decorativa_tienda() {
 
     /** Next Post Link */
 
-    if ( get_next_posts_link() )
+    /*if ( get_next_posts_link() )
 
         printf( '<li>%s</li>' . "\n", get_next_posts_link() );
     echo '</ul></div>' . "\n";
 
 }
 
-add_action('woocommerce_after_main_content', 'njengah_pagination');
+add_action('woocommerce_after_main_content', 'njengah_pagination');*/
+
+// Bloque de contenido html
+function espacio_para_descripción_HTML() {
+	echo'
+	<section id="imgsProduct">
+		<div class="container-md">
+			<div class="row">
+				<div class="col-12">
+					<div class="descripcionHTML">
+						<h1>Espacio para descripción HTML
+						</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	';
+}
+add_action('woocommerce_after_single_product_summary', 'espacio_para_descripción_HTML', 5);
+
+// Bloque carrusel de productos
+function carrusel_productos() {
+	echo'
+		<section id="productos">
+			<div class="container-md">
+				<div class="row">
+					<div class="col-12">
+						<h1>También te puede interesar</h1>
+						<div class="items">
+							<div class="row">
+								<div class="izquierda col-sm-1">
+									<a href="#" class="left-arrow">
+										<img src="../wp-content/themes/woow/img/izquierda.png" alt="">
+									</a>
+								</div>
+								<div id="carrusel" class="col-sm-10">
+									<div class="carrusel">
+										<div class="product" id="product_0">
+											<div class="caja1 col-sm-3">
+												<a href="single.php">
+													<div class="imagencita">
+														<img src="../wp-content/themes/woow/img/single.png">
+														<img class="previa previaSlide"
+															src="../wp-content/themes/woow/img/previa.svg">
+													</div>
+													<h5 class="separadorsito">.</h5>
+													<h3 class="tituloproducto">Placas ID Smart
+													</h3>
+													<p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+														amet, consectetuer adipiscing elit, sed diam nonummy.
+													</p>
+												</a>
+											</div>
+										</div>
+										<div class="product" id="product_1">
+											<div class="caja1 col-sm-3">
+												<a href="single.php">
+													<div class="imagencita">
+														<img src="../wp-content/themes/woow/img/PañoletaAzul.png">
+														<img class="previa previaSlide"
+															src="../wp-content/themes/woow/img/previa.svg">
+													</div>
+													<h5 class="separadorsito">.</h5>
+													<h3 class="tituloproducto">Pañoleta - azul
+													</h3>
+													<p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+														amet, consectetuer adipiscing elit, sed diam nonummy.
+													</p>
+												</a>
+											</div>
+										</div>
+										<div class="product" id="product_2">
+											<div class="caja1 col-sm-3">
+												<a href="single.php">
+													<div class="imagencita">
+														<img src="../wp-content/themes/woow/img/ArnesFloral.png">
+														<img class="previa previaSlide"
+															src="../wp-content/themes/woow/img/previa.svg">
+													</div>
+													<h5 class="separadorsito">.</h5>
+													<h3 class="tituloproducto">Arnes Floral
+													</h3>
+													<p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+														amet, consectetuer adipiscing elit, sed diam nonummy.
+													</p>
+												</a>
+											</div>
+										</div>
+										<div class="product" id="product_3">
+											<div class="caja1 col-sm-3">
+												<a href="single.php">
+													<div class="imagencita">
+														<img src="../wp-content/themes/woow/img/single.png">
+														<img class="previa previaSlide"
+															src="../wp-content/themes/woow/img/previa.svg">
+													</div>
+													<h5 class="separadorsito">.</h5>
+													<h3 class="tituloproducto">Placas ID Smart
+													</h3>
+													<p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+														amet, consectetuer adipiscing elit, sed diam nonummy.
+													</p>
+												</a>
+											</div>
+										</div>
+										<div class="product" id="product_4">
+											<div class="caja1 col-sm-3">
+												<a href="single.php">
+													<div class="imagencita">
+														<img src="../wp-content/themes/woow/img/PañoletaAzul.png">
+														<img class="previa previaSlide"
+															src="../wp-content/themes/woow/img/previa.svg">
+													</div>
+													<h5 class="separadorsito">.</h5>
+													<h3 class="tituloproducto">Pañoleta - azul
+													</h3>
+													<p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+														amet, consectetuer adipiscing elit, sed diam nonummy.
+													</p>
+												</a>
+											</div>
+										</div>
+										<div class="product" id="product_5">
+											<div class="caja1 col-sm-3">
+												<a href="single.php">
+													<div class="imagencita">
+														<img src="../wp-content/themes/woow/img/ArnesFloral.png">
+														<img class="previa previaSlide"
+															src="../wp-content/themes/woow/img/previa.svg">
+													</div>
+													<h5 class="separadorsito">.</h5>
+													<h3 class="tituloproducto">Arnes Floral
+													</h3>
+													<p class="descripcionproducto" align="justify"> Lorem Lorem ipsum dolor sit
+														amet, consectetuer adipiscing elit, sed diam nonummy.
+													</p>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="derecha col-sm-1">
+									<a href="#" class="right-arrow">
+										<img src="../wp-content/themes/woow/img/derecha.png" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	';
+}
+add_action('woocommerce_after_single_product_summary', 'carrusel_productos', 5);
+

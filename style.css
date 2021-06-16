@@ -1279,12 +1279,12 @@ header .lupa, .iconCar, .iconCue{
 #productos .izquierda {
   float: left;
   position: relative;
-  margin-top: 23%;
+  margin-top: 19%;
 }
 #productos .derecha {
   float: left;
   position: relative;
-  margin-top: 23%;
+  margin-top: 19%;
 }
 #productos .caja, #productos .cajita, #productos .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple {
   text-align: center;
@@ -1331,7 +1331,7 @@ header .lupa, .iconCar, .iconCue{
 #productos .tituloproducto,
 #productos .descripcionproducto,
 #productos .woocommerce-loop-product__title,
-.product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p {
+.woocommerce-product-details__short-description p {
   text-align: left !important;
   padding-right: 6%;
   padding-left: 6%;
@@ -1343,15 +1343,26 @@ header .lupa, .iconCar, .iconCue{
 }
 #productos .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p {
   font-size: calc(0.4rem + 0.7vw);
+  text-align: left;
   right: 0;
   max-width: max-content;
+  padding-right: 6%;
+  padding-left: 6%;
 }
-.product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p {
+.woocommerce-Price-amount.amount {
+  font-size: calc(0.8rem + 1.3vw);
+  font-weight: bold;
+  position: relative;
+  right: 0%;
+  margin-bottom: 3%;
+}
+.woocommerce-product-details__short-description p {
   font-size: calc(0.6rem + 1.1vw);
   font-weight: bold;
   position: relative;
   right: 5.5%;
   max-width: 72%;
+  margin-top: 7%;
 }
 #productos .imagencita {
   padding: 0 24 0 24;
@@ -1537,19 +1548,21 @@ nav.woocommerce-pagination ul li span.current {
 
 
 
-
-#Product .botonL{
-  float: right;
-  width: 38px;
+.aDeBotonL {
+  text-decoration: none;
   position: relative;
-  left: 0%;
-  margin-right: 2%;
+  left: 76%;
 }
-#Product .botonR{
-  float: right;
+.botonL{
   width: 38px;
+}
+.aDeBotonR {
+  text-decoration: none;
   position: relative;
-  left: 0%;
+  left: 78%;
+}
+.botonR{
+  width: 38px;
 }
 #imgsProduct img{
   width: 31%;
@@ -1572,15 +1585,15 @@ nav.woocommerce-pagination ul li span.current {
 
 
 
-.separadore{
+.separadore {
   background: #414141;
   border: #414141;
   border-radius: 11%;
-  height: 0.2%;
+  height: 0.1%;
   width: 9%;
-  margin-top: 4%;
+  margin-top: 0%;
   position: absolute;
-  top: -4.5%;
+  top: 0.5%;
   left: 56%;
 }
 
@@ -1652,10 +1665,8 @@ nav.woocommerce-pagination ul li span.current {
 .botonCarrito, .single_add_to_cart_button {
   float: left;
   background: #1e9bd6 !important;
-  font-size: calc(0.6rem + 1vw);
-  padding: 1.5% !important;
-  padding-left: 3% !important;
-  padding-right: 3% !important;
+  font-size: calc(0.5rem + 0.8vw) !important;
+  padding: 2% 3% 2% 3% !important;
   max-width: 47%;
   margin-top: -4%;
   margin-bottom: 3%;
@@ -1676,6 +1687,9 @@ nav.woocommerce-pagination ul li span.current {
   margin-top: -10%;
   position: relative;
   top: 3%;
+}
+#imgsProduct {
+  margin-top: 55%;
 }
 #imgsProduct .descripcionHTML {
   background-color: #878787;
