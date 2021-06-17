@@ -15,14 +15,14 @@
     ?>);
 }
 </style>
-<section id="productos">
+<section id="productos" class="Slide">
     <div class="container-md">
         <div class="row">
             <div class="col-12">
-                <h1>Nuevos Productos</h1>
                 <div class="items">
                     <div class="row">
-                        <div class="izquierda col-sm-1">
+                        <?php echo do_shortcode ('[yith_wc_productslider id=112]'); ?>
+                        <!-- <div class="izquierda col-sm-1">
                             <a href="#" class="left-arrow">
                                 <img src="../wp-content/themes/woow/img/izquierda.png" alt="">
                             </a>
@@ -137,7 +137,7 @@
                             <a href="#" class="right-arrow">
                                 <img src="../wp-content/themes/woow/img/derecha.png" alt="">
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

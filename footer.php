@@ -74,8 +74,6 @@
 <!--</div> <!-- #page -->
 
 <!-- Carrusel -->
-<!-- Carrusel -->
-<!-- Carrusel -->
 <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script>
 var current = 0;
@@ -96,7 +94,7 @@ $(document).ready(function() {
         }
 
         $(".carrusel").animate({
-            "left": -($('#product_' + current).position().left)
+            "left": -($('.post-' + current).position().left)
         }, 600);
 
         return false;
@@ -122,7 +120,7 @@ $(document).ready(function() {
         }
 
         $(".carrusel").animate({
-            "left": -($('#product_' + current).position().left)
+            "left": -($('.post-' + current).position().left)
         }, 600);
 
         return false;
