@@ -1631,39 +1631,41 @@ nav.woocommerce-pagination ul li span.current {
   border-radius: 8px;
   margin-bottom: 4%;
 }
-#Product input.signoMENOS {
-  float: left;
-  width: 5%;
-  position: relative;
-  margin-top: 1%;
-  margin-left: 0%;
+.product_meta {
+  color: #bbbbbb;
+  font-family: "Mont";
+  font-size: 1.3em;
+  font-weight: bold;
 }
-.cantidad {
+.single_variation_wrap input.signoMENOS {
   float: left;
+  width: 4.4%;
+  position: relative;
+  margin-top: -1.2%;
+  margin-left: 0%;
+  margin-right: 2%;
+}
+.woocommerce-variation-add-to-cart.variations_button .input-text.qty.text {
   background: #e5e5e5;
   border-color: #e5e5e5 !important;
   border-radius: 6px !important;
-  border: 0 !important;
   outline: none;
   text-align: center;
   font-size: calc(0.4rem + 1vw);
-  width: 14%;
-  position: relative;
-  left: 7%;
-  margin-top: 2%;
-  padding: 1%;
+  width: 66%;
 }
-.cantidad::-webkit-inner-spin-button, 
-.cantidad::-webkit-outer-spin-button{ 
+.woocommerce-variation-add-to-cart.variations_button .input-text.qty.text::-webkit-inner-spin-button, 
+.woocommerce-variation-add-to-cart.variations_button .input-text.qty.text::-webkit-outer-spin-button{ 
   -webkit-appearance: none; 
   margin: 0; 
 }
-#Product input.signoMAS{
+.single_variation_wrap input.signoMAS{
   float: left;
-  width: 5%;
+  width: 4%;
   position: relative;
-  margin-top: 2.4%;
-  margin-left: 14%;
+  margin-top: 0%;
+  margin-left: -3%;
+  margin-right: 6%;
 }
 .botonCarrito, .single_add_to_cart_button {
   float: left;

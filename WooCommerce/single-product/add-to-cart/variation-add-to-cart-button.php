@@ -28,6 +28,7 @@ global $product;
 	do_action( 'woocommerce_after_add_to_cart_quantity' );
 	?>
 
+	<input class="signoMAS" id="mas" type="image" src="http://woowcolombia.test/wp-content/uploads/2021/06/signoMAS.svg" alt="signo Mas">
 	<button type="submit" class="single_add_to_cart_button button alt"><?php echo esc_html( $product->single_add_to_cart_text() ); ?></button>
 
 	<?php do_action( 'woocommerce_after_add_to_cart_button' ); ?>

@@ -383,8 +383,56 @@ function titulo_cantidad_single() {
 	echo '
 		<label for="Cantidad"><strong>Cantidad</strong></>
 		<br />
+		<input class="signoMENOS" id="menos" type="image" src="http://woowcolombia.test/wp-content/uploads/2021/06/signoMENOS.svg" alt="Signo Menos">
 		';
 }
 add_action('woocommerce_before_add_to_cart_quantity', 'titulo_cantidad_single', 1);
 
 
+function botones_cantidad() {
+	echo '
+		<script type="text/javascript">
+		var sumar = document.getElementById("mas");
+		var restar = document.getElementById("menos");
+		var contador = document.getElementById("contador");
+		var valorBase = 1;
+		var prevValue;
+
+		function calcular() {
+			var value = contador.value;
+			var isValid = /^[1-9][0-9]*$/.test(value);
+
+			if (!isValid) {
+				contador.value = prevValue;
+			} else {
+				prevValue = value;
+			}
+
+			importe.value = Number.parseFloat(contador.value * valorBase).toFixed(2);
+		}
+
+		sumar.onclick = function() {
+			contador.value = Number(contador.value) + 1;
+			calcular();
+		};
+
+		restar.onclick = function() {
+			contador.value = Number(contador.value) - 1;
+			calcular();
+		};
+
+		contador.onchange = function() {
+			calcular();
+		};
+
+		contador.onkeyup = function() {
+			if (contador.value === "") {
+				return;
+			}
+			calcular();
+		};
+
+		calcular();
+		</script>
+	';
+}
