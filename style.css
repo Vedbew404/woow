@@ -1163,7 +1163,7 @@ header .lupa, .iconCar, .iconCue{
 }
 #cabecera input {
   margin-top: 0;
-  margin-bottom: 44%;
+  margin-bottom: 33%;
   border: 1px solid #ffd41f;
   color: #ffffff;
   background: none;
@@ -1539,7 +1539,6 @@ nav.woocommerce-pagination ul li span.current {
   right: 4%;
   width: 40% !important;
 }
-
 .woocommerce-product-gallery__image {
   position: relative;
   left: 38%;
@@ -1560,14 +1559,10 @@ nav.woocommerce-pagination ul li span.current {
 #Search {
   min-height: 150px;
 }
-
-
-
-
 .aDeBotonL {
   text-decoration: none;
   position: relative;
-  left: 76%;
+  left: 78.5%;
 }
 .botonL{
   width: 38px;
@@ -1575,7 +1570,7 @@ nav.woocommerce-pagination ul li span.current {
 .aDeBotonR {
   text-decoration: none;
   position: relative;
-  left: 78%;
+  left: 80%;
 }
 .botonR{
   width: 38px;
@@ -1593,14 +1588,6 @@ nav.woocommerce-pagination ul li span.current {
   position: absolute;
   right: 18%;
 }
-
-
-
-
-
-
-
-
 .separadore {
   background: #414141;
   border: #414141;
@@ -1609,15 +1596,9 @@ nav.woocommerce-pagination ul li span.current {
   width: 9%;
   margin-top: 0%;
   position: absolute;
-  top: 0.5%;
+  top: 1.5%;
   left: 56%;
 }
-
-
-
-
-
-
 #Product h1, .product_title{
   font-size: calc(1rem + 1.5vw);
   color: #878787;
@@ -1631,15 +1612,21 @@ nav.woocommerce-pagination ul li span.current {
   color: #bbbbbb;
   margin-top: -7%;
 }
-#Product label{
+.summary.entry-summary label{
   font-size: calc(0.7rem + 1.1vw);
   color: #8b8b8b;
+  display: block;
 }
-#talla {
+.woocommerce div.product form.cart .variations select {
+  min-width: 44%;
+}
+.value.talla select {
   background: #bbbbbb;
   border-color: #bbbbbb;
-  font-size: 1.2em;
-  padding: 1.5%;
+  color: #212529;
+  font-family: "Mont";
+  font-size: 1.5em;
+  padding: 1%;
   padding-left: 3%;
   border-radius: 8px;
   margin-bottom: 4%;

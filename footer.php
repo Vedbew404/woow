@@ -94,7 +94,7 @@ $(document).ready(function() {
         }
 
         $(".carrusel").animate({
-            "left": -($('.post-' + current).position().left)
+            "left": -($('#product_' + current).position().left)
         }, 600);
 
         return false;
@@ -120,7 +120,7 @@ $(document).ready(function() {
         }
 
         $(".carrusel").animate({
-            "left": -($('.post-' + current).position().left)
+            "left": -($('#product_' + current).position().left)
         }, 600);
 
         return false;
