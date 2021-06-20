@@ -258,9 +258,10 @@ function short_desc_on_product_archives() {
   }
   add_action( 'woocommerce_after_shop_loop_item_title', 'short_desc_on_product_archives', 40 );
 
+// Agregar la imagen de "Vista previa" en carrusel
 function vista_previa_hover() {
 	echo '
-	<img class="previa2" src="../wp-content/themes/woow/img/previa.svg">
+	<img class="previa2" src="http://woowcolombia.test/wp-content/uploads/2021/06/previa.svg">
 	';
 }
 	add_action('woocommerce_before_shop_loop_item_title', 'vista_previa_hover');
@@ -374,7 +375,16 @@ add_action('woocommerce_after_single_product_summary', 'espacio_para_descripció
 
 // Bloque carrusel de productos
 function carrusel_productos() {
-	echo do_shortcode ('[yith_wc_productslider id=112]');
+	echo'
+		<section id="productos" class="Slide">
+			<div class="container-md">
+				<h1>Nuevos Productos</h1>
+		';
+				echo do_shortcode ('[yith_wc_productslider id=112]');
+	echo'
+			</div>
+		</section>
+		';
 }
 add_action('woocommerce_after_single_product_summary', 'carrusel_productos', 5);
 
@@ -436,3 +446,13 @@ function botones_cantidad() {
 		</script>
 	';
 }
+
+// Modifica los "productos relacionados" en single 
+function jk_related_products_args( $args ) {
+	$args['posts_per_page'] = 3;  // se muestran 3 productos
+	$args['columns'] = 3; // se muestran en columnas de 3 en 3
+	return $args;
+}
+add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+
+
