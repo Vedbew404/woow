@@ -1302,7 +1302,10 @@ header .lupa, .iconCar, .iconCue{
 }
 #productos .caja,
 #productos .cajita,
-#productos .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple {
+#productos .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple,
+#productos .status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-variable,
+.related.products .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple,
+.related.products .status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-variable {
   text-align: center;
   padding: 0.5%;
   margin: 3% 1% 1% 1% !important;
@@ -1313,7 +1316,8 @@ header .lupa, .iconCar, .iconCue{
   box-shadow: 1px 1px 10px #8b8b8b; 
   height: 501px;
 }
-.woocommerce ul.products li.product a img {
+.woocommerce ul.products li.product a img,
+.related.products .attachment-woocommerce_thumbnail.size-woocommerce_thumbnail {
   width: 92.5%;
   margin: 1em;
 }
@@ -1357,7 +1361,10 @@ header .lupa, .iconCar, .iconCue{
   font-size: calc(0.5rem + 1.3vw);
   margin-top: 3%;
 }
-#productos .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p {
+#productos .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p,
+#productos .status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-variable p,
+.related.products .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p,
+.related.products .status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-variable p {
   font-size: calc(0.4rem + 0.7vw);
   text-align: left;
   right: 0;
@@ -1391,13 +1398,16 @@ header .lupa, .iconCar, .iconCue{
   top: 2%;
   display: none;
 }
-#productos .previa2 {
+#productos .previa2,
+.related.products .previa2 {
   position: absolute;
   right: 0;
   top: 47%;
   display: none;
 }
-#productos a:hover .previa, #productos a:hover .previa2 {
+#productos a:hover .previa,
+#productos a:hover .previa2,
+.related.products a:hover .previa2 {
   display: block;
 }
 #productos .separadorsito {
@@ -1711,7 +1721,9 @@ nav.woocommerce-pagination ul li span.current {
 #imgsProduct .descripcionHTML h1 {
   font-size: calc(2.2rem + 5vw);
 }
-.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab {
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab,
+.woocommerce div.product .woocommerce-tabs .panel,
+#reviews .woocommerce-Reviews {
   padding: 3%;
 }
 .related.products {
@@ -1739,7 +1751,7 @@ nav.woocommerce-pagination ul li span.current {
   font-size: calc(0.7rem + 2.4vw);
   color: #878787;
   width: 60%;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-bottom: 3%;
   position: relative;
   left: 21%;
