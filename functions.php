@@ -236,6 +236,20 @@ function formulario_single(){
 add_action('woocommerce_before_single_product', 'formulario_single');
 
 // Botones para moverse entre los productos
+
+ 
+function bbloomer_prev_next_product(){
+	echo '<div class="prev_next_buttons">';
+   // 'product_cat' will make sure to return next/prev from current category
+    $previous = next_post_link('%link', 'PREVIOUS', TRUE, ' ', 'product_cat');
+   	$next = previous_post_link('%link', 'NEXT', TRUE, ' ', 'product_cat');
+	echo $previous;
+	echo $next;
+	echo '</div>';
+	$NuevaClase = ' botonL';         
+}
+add_action( 'woocommerce_before_single_product_summary', 'bbloomer_prev_next_product' );
+
 function moverse_entre_productos(){
 	echo '
 		<div>

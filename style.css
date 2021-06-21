@@ -1351,21 +1351,23 @@ header .lupa, .iconCar, .iconCue{
 #productos .tituloproducto,
 #productos .descripcionproducto,
 #productos .woocommerce-loop-product__title,
-.woocommerce-product-details__short-description p {
+.woocommerce-product-details__short-description p,
+.related.products .woocommerce-loop-product__title {
   text-align: left !important;
-  padding-right: 6%;
-  padding-left: 6%;
+  padding-right: 6% !important;
+  padding-left: 6% !important;
 }
 #productos .tituloproducto,
-#productos .woocommerce-loop-product__title {
-  font-size: calc(0.5rem + 1.3vw);
-  margin-top: 3%;
+#productos .woocommerce-loop-product__title,
+.related.products .woocommerce-loop-product__title {
+  font-size: calc(0.5rem + 1.3vw) !important;
+  margin-top: 3% !important;
 }
 #productos .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p,
 #productos .status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-variable p,
 .related.products .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p,
 .related.products .status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-variable p {
-  font-size: calc(0.4rem + 0.7vw);
+  font-size: calc(0.4rem + 0.6vw);
   text-align: left;
   right: 0;
   max-width: max-content;
@@ -1403,14 +1405,15 @@ header .lupa, .iconCar, .iconCue{
   position: absolute;
   right: 0;
   top: 47%;
-  display: none;
+  display: none !important;
 }
 #productos a:hover .previa,
 #productos a:hover .previa2,
 .related.products a:hover .previa2 {
-  display: block;
+  display: block !important;
 }
-#productos .separadorsito {
+#productos .separadorsito,
+.related.products .separadorsito {
   background: #414141;
   border: #414141;
   color: #414141;
@@ -1441,7 +1444,8 @@ header .lupa, .iconCar, .iconCue{
   margin-top: 7%;
 }
 /* Pagina Tienda */
-#productos a{
+#productos a,
+.related.products a {
   color: #878787;
   text-decoration: none;
 }
