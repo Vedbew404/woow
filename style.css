@@ -1651,9 +1651,11 @@ nav.woocommerce-pagination ul li span.current {
   font-size: 1.3em;
   font-weight: bold;
 }
-.single_variation_wrap input.signoMENOS {
+.single_variation_wrap a.signoMENOS {
+  cursor: pointer;
   float: left;
-  width: 4.4%;
+  width: 24px;
+  height: 44px;
   position: relative;
   margin-top: -1.2%;
   margin-left: 0%;
@@ -1673,9 +1675,11 @@ nav.woocommerce-pagination ul li span.current {
   -webkit-appearance: none; 
   margin: 0; 
 }
-.single_variation_wrap input.signoMAS{
+.single_variation_wrap a.signoMAS{
+  cursor: pointer;
   float: left;
-  width: 4%;
+  width: 24px;
+  height: 44px;
   position: relative;
   margin-top: 0%;
   margin-left: -3%;

@@ -387,7 +387,7 @@ function espacio_para_descripción_HTML() {
 }
 add_action('woocommerce_after_single_product_summary', 'espacio_para_descripción_HTML', 5);
 
-// Bloque carrusel de productos
+// Bloque carrusel de productos en "Single"
 function carrusel_productos() {
 	echo'
 		<section id="productos" class="Slide">
@@ -402,64 +402,37 @@ function carrusel_productos() {
 }
 add_action('woocommerce_after_single_product_summary', 'carrusel_productos', 5);
 
-// Titulo de cantidad en "Single"
+// Titulo de cantidad en "Single" y signo menos
 function titulo_cantidad_single() {
 	echo '
 		<label for="Cantidad"><strong>Cantidad</strong></>
 		<br />
-		<input class="signoMENOS" id="menos" type="image" src="http://woowcolombia.test/wp-content/uploads/2021/06/signoMENOS.svg" alt="Signo Menos">
+		<a class="signoMENOS" id="menos"><img src="http://woowcolombia.test/wp-content/uploads/2021/06/signoMENOS.svg" alt="Signo Menos"></a>
 		';
 }
-add_action('woocommerce_before_add_to_cart_quantity', 'titulo_cantidad_single', 1);
+add_action('woocommerce_before_add_to_cart_quantity', 'titulo_cantidad_single', 2);
 
-
-function botones_cantidad() {
+// Script de cantidad en single
+function script_cantidad() {
 	echo '
 		<script type="text/javascript">
-		var sumar = document.getElementById("mas");
-		var restar = document.getElementById("menos");
-		var contador = document.getElementById("contador");
-		var valorBase = 1;
-		var prevValue;
-
-		function calcular() {
-			var value = contador.value;
-			var isValid = /^[1-9][0-9]*$/.test(value);
-
-			if (!isValid) {
-				contador.value = prevValue;
-			} else {
-				prevValue = value;
-			}
-
-			importe.value = Number.parseFloat(contador.value * valorBase).toFixed(2);
-		}
-
-		sumar.onclick = function() {
-			contador.value = Number(contador.value) + 1;
-			calcular();
-		};
-
-		restar.onclick = function() {
-			contador.value = Number(contador.value) - 1;
-			calcular();
-		};
-
-		contador.onchange = function() {
-			calcular();
-		};
-
-		contador.onkeyup = function() {
-			if (contador.value === "") {
-				return;
-			}
-			calcular();
-		};
-
-		calcular();
+		jQuery(document).ready(function($){
+			$(document).on("click", "#mas, #menos", function(e){
+				e.preventDefault();
+				console.log("aumentar");
+				let input = $(".qty");
+				let newVal = input.val();
+				if(this.id=== "mas"){
+					return input.val(++newVal);
+				}else{
+					return input.val(--newVal);
+				}
+			});
+		});
 		</script>
 	';
 }
+add_action('woocommerce_before_add_to_cart_quantity', 'script_cantidad');
 
 // Modifica los "productos relacionados" en single 
 function jk_related_products_args( $args ) {
