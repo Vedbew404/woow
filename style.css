@@ -1754,15 +1754,16 @@ nav.woocommerce-pagination ul li span.current {
   left: 5%;
 }
 #tituloNosotros h1 {
-  text-align: center;
-  font-weight: normal;
-  font-size: calc(0.7rem + 2.4vw);
-  color: #878787;
-  width: 60%;
-  margin-top: 2%;
-  margin-bottom: 3%;
-  position: relative;
-  left: 21%;
+    text-align: center;
+    font-weight: normal;
+    font-size: calc(0.7rem + 2vw);
+    color: #878787;
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    position: relative;
+    left: 21%;
+    font-weight: bold;
 }
 #MisionVision h1 {
   padding-top: 0%;
@@ -1777,7 +1778,7 @@ nav.woocommerce-pagination ul li span.current {
   padding: 6%;
   padding-top: 0%;
   font-size: calc(0.5rem + 1.3vw);
-  font-weight: normal;
+  font-weight: bold;
   margin-top: 2%;
 }
 #MisionVision .bloqueAzul {
