@@ -21,3 +21,11 @@ vendor/
 *.log
 *.sql
 *.sqlite
+
+# ignore dependency folder
+node_modules
+vendor
+
+# ignore composer.lock & package.lock
+composer.lock
+package.lock
