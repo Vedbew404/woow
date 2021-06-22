@@ -34,9 +34,8 @@
     <div id="page" class="site">
         <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'woow' ); ?></a>
         <?php
-			 //the_custom_logo();
 			if ( is_front_page() ) :
-				?>
+		?>
         <header>
             <div class="container-sm">
                 <div class="row">
@@ -116,7 +115,7 @@
         </section>
         <?php
 			else :
-				?>
+		?>
         <header>
             <div class="container-sm">
                 <div class="row">
@@ -125,6 +124,19 @@
                     </div>
                     <div class="col-4">
                         <div class="row">
+                        <?php
+                            if ( is_page("tienda") || is_single() ) :
+                        ?>
+                            <div class="Lupa col-4">
+                                <div class="iconos">
+                                    <a href="#">
+                                        <img class="lupa" src="http://woowcolombia.test/wp-content/uploads/2021/06/lupa.svg" alt="Buscar" style="visibility: collapse;">
+                                    </a>
+                                </div>
+                            </div>
+                        <?php
+                            else :
+                        ?>
                             <div class="Lupa col-4">
                                 <div class="iconos">
                                     <a href="#">
@@ -132,6 +144,9 @@
                                     </a>
                                 </div>
                             </div>
+                        <?php
+                            endif;
+                        ?>
                             <div class="Carrito col-4">
                                 <div class="iconos">
                                     <a href="#">
@@ -188,4 +203,5 @@
             </div>
         </section>
         <?php
-		endif; ?>
+		    endif;
+        ?>
