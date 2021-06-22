@@ -372,15 +372,9 @@ add_action('woocommerce_after_main_content', 'njengah_pagination');*/
 function espacio_para_descripción_HTML() {
 	echo'
 	<section id="imgsProduct">
-		<div class="container-md">
-			<div class="row">
-				<div class="col-12">
-					<div class="descripcionHTML">
-						<h1>Espacio para descripción HTML
-						</h1>
-					</div>
-				</div>
-			</div>
+		<div class="descripcionHTML">
+			<h1>Espacio para descripción HTML
+			</h1>
 		</div>
 	</section>
 	';

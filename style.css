@@ -66,7 +66,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-html {
+ html {
 	line-height: 1.15;
 	-webkit-text-size-adjust: 100%;
 }
@@ -972,55 +972,11 @@ textarea {
 /* Estilos globales */
 @import './fonts/stylesheet.css';
 
-/* Carrusel */
-/* Carrusel */
-/* Carrusel */
-#carrusel {
-  /* float:left; */
-  width:894px;
-  overflow:hidden;
-  height:510px;
-  position:relative;
-  margin-top:20px;
-  margin-bottom:20px;
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
 }
-/* #carrusel .left-arrow {
-  position:absolute;
-  left:10px;
-  z-index:1;
-  top:50%;
-  margin-top:-9px;
-}
-#carrusel .right-arrow {
-  position:absolute;
-  right:10px;
-  z-index:1;
-  top:50%;
-  margin-top:-9px;
-} */
-.carrusel {
-  width:4000px;
-  left:0px;
-  position:absolute;
-  z-index:0;
-}
-.carrusel .product {
-  float: left;
-  height: 510px;
-  margin-left: 14px;
-  margin-right: 14px;
-  width: 270px;
-  text-align:center;
-}
-.carrusel img {
-  cursor:pointer;
-}
-/* .product {
-  border:#CCCCCC 1px solid;
-} */
-/* Carrusel */
-/* Carrusel */
-/* Carrusel */
 
 body {
   font: 12px "Mont";
@@ -2215,9 +2171,6 @@ nav.woocommerce-pagination ul li span.current {
   /* Styles */
   }
   
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-  /* Styles */
   /* Impontante para el menu responsive */
   @media screen and (min-width: 37.5em) {
     .menu-toggle {
@@ -2227,6 +2180,13 @@ nav.woocommerce-pagination ul li span.current {
       display: none;
     }
   }
+
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
+    .container-md {
+      width: 100%;
+    }
   /* Home */
     header {
       min-height: 101px;
@@ -2340,17 +2300,17 @@ nav.woocommerce-pagination ul li span.current {
       left: 0%;
     }
     #cabecera2 h2, #Search h2 {
-      margin-bottom: 0%;
-      font-size: 1.5em;
-      max-width: 60.4%;
-      left: 9%;
+      margin-bottom: 0% !important;
+      font-size: 1.5em !important;
+      max-width: 60.4% !important;
+      left: 9% !important;
     }
-    #cabecera2 form, #Search form {
-      margin-top: 0%;
-      font-size: 16px;
-      padding: 2%;
-      max-width: 62.5%;
-      left: 6%;
+    #cabecera2 form {
+      margin-top: 0% !important;
+      font-size: 16px !important;
+      padding: 2% !important;
+      max-width: 62.5% !important;
+      left: 6% !important;
     }
     #linea .separNONE {
       display: none;
@@ -2437,6 +2397,79 @@ nav.woocommerce-pagination ul li span.current {
       margin-top: 6%;
     }
   /* Fin Contacto */
+  /* Single */
+    #posHeader2 {
+      background: transparent;
+    }
+    #product_search_widget-2 .widget-title {
+      margin-bottom: 0%;
+      font-size: 1.5em;
+      max-width: 55.5%;
+      left: 6%;
+    }
+    #product_search_widget-2 form {
+      margin-top: 2%;
+      font-size: 16px;
+      padding: 2%;
+      max-width: 100%;
+      left: 0%;
+    }
+    .woocommerce-product-gallery__image {
+      left: 0%;
+    }
+    #Product img, .wp-post-image {
+      margin-left: 14% !important;
+    }
+    .woocommerce div.product div.images img {
+      margin-left: 54%;
+    }
+    .summary {
+      right: -10%;
+      width: 90% !important;
+    }
+    #Product h1, .product_title {
+      font-size: calc(3rem + 2.5vw);
+    }
+    .woocommerce-Price-amount.amount {
+      font-size: calc(2.8rem + 2.3vw);
+    }
+    .woocommerce-product-details__short-description p {
+      font-size: calc(1.6rem + 1.1vw);
+    }
+    .summary.entry-summary label {
+      font-size: calc(2.7rem + 1.1vw);
+    }
+    .woocommerce div.product form.cart .variations select {
+      min-width: 79%;
+      font-size: 3em;
+    }
+    .woocommerce-variation-add-to-cart.variations_button .input-text.qty.text {
+      font-size: calc(2.4rem + 1vw);
+    }
+    .single_variation_wrap a.signoMENOS,
+    .single_variation_wrap a.signoMAS {
+      width: 36px;
+      height: 56px;
+    }
+    .botonCarrito,
+    .single_add_to_cart_button {
+      font-size: calc(2rem + 0.8vw) !important;
+      padding: 2.5% 3% 2.5% 3% !important;
+    }
+    .product_meta {
+      font-size: 2.3em;
+    }
+    #imgsProduct {
+      margin-top: 9%;
+    }
+    #imgsProduct .descripcionHTML {
+      border-radius: 0;
+      margin: 0;
+    }
+    #imgsProduct .descripcionHTML h1 {
+      font-size: calc(3.2rem + 5vw);
+    }
+  /* Fin Single */
   }
   /* iPads (landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
