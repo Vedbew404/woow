@@ -386,7 +386,7 @@ function carrusel_productos() {
 	echo'
 		<section id="productos" class="Slide">
 			<div class="container-md">
-				<h1>Nuevos Productos</h1>
+				<h1>También te puede interesar</h1>
 		';
 				echo do_shortcode ('[yith_wc_productslider id=112]');
 	echo'
