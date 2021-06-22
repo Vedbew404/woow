@@ -1675,11 +1675,11 @@ nav.woocommerce-pagination ul li span.current {
   text-align: center;
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 7%;
-  padding-bottom: 7%;
+  padding-top: 3%;
+  padding-bottom: 3%;
   border-radius: 6px;
-  margin-left: 6%;
-  margin-right: 6%;
+  margin-left: 12%;
+  margin-right: 12%;
   margin-bottom: 1%;
 }
 #imgsProduct .descripcionHTML h1 {
@@ -2170,22 +2170,22 @@ nav.woocommerce-pagination ul li span.current {
   @media only screen and (max-width : 320px) {
   /* Styles */
   }
-  
-  /* Impontante para el menu responsive */
-  @media screen and (min-width: 37.5em) {
-    .menu-toggle {
-      display: block;
-    }
-    .main-navigation ul {
-      display: none;
-    }
-  }
 
   /* iPads (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   /* Styles */
+  /* Globales */
     .container-md {
       width: 100%;
+    }
+    /* Impontante para el menu responsive */
+    @media screen and (min-width: 37.5em) {
+      .menu-toggle {
+        display: block;
+      }
+      .main-navigation ul {
+        display: none;
+      }
     }
   /* Home */
     header {
@@ -2464,7 +2464,8 @@ nav.woocommerce-pagination ul li span.current {
     }
     #imgsProduct .descripcionHTML {
       border-radius: 0;
-      margin: 0;
+      margin-left: 0%;
+      margin-right: 0%;
     }
     #imgsProduct .descripcionHTML h1 {
       font-size: calc(3.2rem + 5vw);
