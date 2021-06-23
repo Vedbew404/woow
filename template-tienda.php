@@ -34,29 +34,6 @@
         </div>
     </div>
 </section>
-<script>
-    // Get a NodeList of all .demo elements
-const prev = document.querySelectorAll('.prev');
-    // Change the text of multiple elements with a loop
-prev.forEach(element => {
-  element.innerHTML = '<img src="" class="left">';
-});
-    // Assign image element
-const img1 = document.querySelector('.left');
-img1.setAttribute('src', '../wp-content/themes/woow/img/left.svg');
-</script>
-<script>
-    // Get a NodeList of all .demo elements
-const next = document.querySelectorAll('.next');
-    // Change the text of multiple elements with a loop
-next.forEach(element => {
-  element.innerHTML = '<img src="" class="right">';
-});
-    // Assign image element
-const img2 = document.querySelector('.right');
-img2.setAttribute('src', '../wp-content/themes/woow/img/right.svg');
-</script>
-
 
 
 
