@@ -73,57 +73,43 @@
 <!--</footer><!-- #colophon -->
 <!--</div> <!-- #page -->
 
-<!-- Carrusel -->
-<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<!-- Scripts de la apariencia de los botones del paginado de productos -->
 <script>
-var current = 0;
-var imagenes = new Array();
+// Get a NodeList of all .demo elements
+const prev = document.querySelectorAll('.prev');
+// Change the text of multiple elements with a loop
+prev.forEach(element => {
+    element.innerHTML = '<img src="" class="left">';
+});
+// Assign image element
+const img1 = document.querySelector('.left');
+img1.setAttribute('src', '../wp-content/themes/woow/img/left.svg');
+</script>
+<script>
+// Get a NodeList of all .demo elements
+const next = document.querySelectorAll('.next');
+// Change the text of multiple elements with a loop
+next.forEach(element => {
+    element.innerHTML = '<img src="" class="right">';
+});
+// Assign image element
+const img2 = document.querySelector('.right');
+img2.setAttribute('src', '../wp-content/themes/woow/img/right.svg');
+</script>
 
-$(document).ready(function() {
-    var numImages = 6;
-    if (numImages <= 3) {
-        $('.right-arrow').css('display', 'none');
-        $('.left-arrow').css('display', 'none');
-    }
-
-    $('.left-arrow').on('click', function() {
-        if (current > 0) {
-            current = current - 1;
+<!-- Script de cantidad en single -->
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    $(document).on("click", "#mas, #menos", function(e) {
+        e.preventDefault();
+        console.log("aumentar");
+        let input = $(".qty");
+        let newVal = input.val();
+        if (this.id === "mas") {
+            return input.val(++newVal);
         } else {
-            current = numImages - 3;
+            return input.val(--newVal);
         }
-
-        $(".carrusel").animate({
-            "left": -($('#product_' + current).position().left)
-        }, 600);
-
-        return false;
-    });
-
-    $('.left-arrow').on('hover', function() {
-        $(this).css('opacity', '0.5');
-    }, function() {
-        $(this).css('opacity', '1');
-    });
-
-    $('.right-arrow').on('hover', function() {
-        $(this).css('opacity', '0.5');
-    }, function() {
-        $(this).css('opacity', '1');
-    });
-
-    $('.right-arrow').on('click', function() {
-        if (numImages > current + 3) {
-            current = current + 1;
-        } else {
-            current = 0;
-        }
-
-        $(".carrusel").animate({
-            "left": -($('#product_' + current).position().left)
-        }, 600);
-
-        return false;
     });
 });
 </script>

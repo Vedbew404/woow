@@ -191,6 +191,7 @@ function dcms_set_maintenance_template() {
 	}
 }*/
 
+
 //Pa algo era esto...
 // First unhook the WooCommerce wrappers:
 remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
@@ -332,28 +333,6 @@ function titulo_cantidad_single() {
 		';
 }
 add_action('woocommerce_before_add_to_cart_quantity', 'titulo_cantidad_single', 2);
-
-// Script de cantidad en single
-function script_cantidad() {
-	echo '
-		<script type="text/javascript">
-		jQuery(document).ready(function($){
-			$(document).on("click", "#mas, #menos", function(e){
-				e.preventDefault();
-				console.log("aumentar");
-				let input = $(".qty");
-				let newVal = input.val();
-				if(this.id=== "mas"){
-					return input.val(++newVal);
-				}else{
-					return input.val(--newVal);
-				}
-			});
-		});
-		</script>
-	';
-}
-add_action('woocommerce_before_add_to_cart_quantity', 'script_cantidad');
 
 // Modifica los "productos relacionados" en single 
 function jk_related_products_args( $args ) {
