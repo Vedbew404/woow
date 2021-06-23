@@ -1567,13 +1567,12 @@ nav.woocommerce-pagination ul li span.current {
   position: absolute;
   right: 18%;
 }
-.separadore {
+.product.type-product.status-publish .separadore {
   background: #414141;
   border: #414141;
   border-radius: 11%;
   height: 0.1%;
   width: 9%;
-  margin-top: 0%;
   position: absolute;
   top: 1.5%;
   left: 56%;
