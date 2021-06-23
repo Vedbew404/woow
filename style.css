@@ -977,7 +977,6 @@ textarea {
   height: 20px;
   border-radius: 100%;
 }
-
 body {
   font: 12px "Mont";
   padding: 0;
@@ -1014,6 +1013,12 @@ ul {
 }
 .navbar {
   left: 5.2%;
+}
+.woocommerce .ywcps-wrapper .ywcps-nav-prev #default_prev,
+.woocommerce .ywcps-wrapper .ywcps-nav-next #default_next {
+  border: none !important;
+  width: 65px !important;
+  top: 44% !important;
 }
 /* Encabezado **/
 header{
