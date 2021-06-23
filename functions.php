@@ -235,9 +235,7 @@ function formulario_single(){
 }
 add_action('woocommerce_before_single_product', 'formulario_single');
 
-// Botones para moverse entre los productos
-
- 
+// Botones para moverse entre los productos en "Single"
 function bbloomer_prev_next_product(){
 	echo '<div class="prev_next_buttons">';
    // 'product_cat' will make sure to return next/prev from current category
@@ -250,17 +248,27 @@ function bbloomer_prev_next_product(){
 }
 add_action( 'woocommerce_before_single_product_summary', 'bbloomer_prev_next_product' );
 
+// Botones para moverse entre productos en "Single"
 function moverse_entre_productos(){
 	echo '
-		<div>
-			<a class="aDeBotonL" href="#">
+		<div id="botoneslyr">
+			<a id="previus" class="aDeBotonL" href="#">
 				<img class="botonL" src="http://woowcolombia.test/wp-content/uploads/2021/06/left.svg" alt="Boton producto anterior">
 			</a>
-			<a class="aDeBotonR" href="#">
+			<a id="next" class="aDeBotonR" href="#">
 				<img class="botonR" src="http://woowcolombia.test/wp-content/uploads/2021/06/right.svg" alt="Boton producto siguiente">
 			</a>
 		</div>
 		<span class="separadore"></span>
+		<script>
+			jQuery(document).ready(function($){
+				var previus = $(".prev_next_buttons a").first().attr("href");
+				var next = $(".prev_next_buttons a").last().attr("href");
+
+				$("#previus").attr("href", previus);
+				$("#next").attr("href", next);
+			});
+		</script>
 	';
 }
 add_action('woocommerce_before_single_product_summary', 'moverse_entre_productos');
@@ -280,7 +288,7 @@ function vista_previa_hover() {
 }
 	add_action('woocommerce_before_shop_loop_item_title', 'vista_previa_hover');
 
-// Barra decorativa sobre el titulo
+// Barra decorativa sobre el titulo del producto en "Single"
 function linea_decorativa_tienda() {
 	echo '
 	<h5 class="separadorsito">.</h5>
@@ -368,7 +376,7 @@ function linea_decorativa_tienda() {
 
 add_action('woocommerce_after_main_content', 'njengah_pagination');*/
 
-// Bloque de contenido html
+// "Bloque de contenido html" en Single
 function espacio_para_descripción_HTML() {
 	echo'
 	<section id="imgsProduct">

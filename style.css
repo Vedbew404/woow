@@ -1316,14 +1316,14 @@ header .lupa, .iconCar, .iconCue{
 #productos .tituloproducto,
 #productos .woocommerce-loop-product__title,
 .related.products .woocommerce-loop-product__title {
-  font-size: calc(0.5rem + 1.3vw) !important;
+  font-size: 2em !important;
   margin-top: 3% !important;
 }
 #productos .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p,
 #productos .status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-variable p,
 .related.products .product.type-product.status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-simple p,
 .related.products .status-publish.instock.product_cat-sin-categorizar.has-post-thumbnail.shipping-taxable.purchasable.product-type-variable p {
-  font-size: calc(0.4rem + 0.6vw);
+  font-size: 1.3em;
   text-align: left;
   right: 0;
   max-width: max-content;
@@ -1384,6 +1384,9 @@ header .lupa, .iconCar, .iconCue{
   margin-top: 0%;
   margin-bottom: 0%;
 }
+#productos.slideIpad {
+  display: none;
+}
 /* Banners */
 #banners1 {
   margin: -6% 0% 8% 0%;
@@ -1419,6 +1422,9 @@ header .lupa, .iconCar, .iconCue{
 .woocommerce nav.woocommerce-pagination ul li {
   border-right: 0px solid white;
   overflow: inherit;
+}
+ul.page-numbers li {
+  background-color: transparent !important;
 }
 a.page-numbers {
   color: #000000 !important;
@@ -1528,6 +1534,9 @@ nav.woocommerce-pagination ul li span.current {
 }
 #Search {
   min-height: 150px;
+}
+.prev_next_buttons{
+  display: none;
 }
 .aDeBotonL {
   text-decoration: none;
@@ -2270,11 +2279,11 @@ nav.woocommerce-pagination ul li span.current {
       left: 71%;
       font-size: 30px;
     }
-    #productos .izquierda {
+    #productos.Slide {
       display: none;
     }
-    #productos .derecha {
-      display: none;
+    #productos.slideIpad {
+      display: block;
     }
     #banners1 {
       display: none;
@@ -2453,7 +2462,7 @@ nav.woocommerce-pagination ul li span.current {
     }
     .botonCarrito,
     .single_add_to_cart_button {
-      font-size: calc(2rem + 0.8vw) !important;
+      font-size: calc(1.8rem + 0.8vw) !important;
       padding: 2.5% 3% 2.5% 3% !important;
     }
     .product_meta {
