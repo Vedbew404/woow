@@ -1020,6 +1020,10 @@ ul {
   width: 65px !important;
   top: 44% !important;
 }
+.search-results {
+  left: 11%;
+  width: 40%;
+}
 /* Encabezado **/
 header{
   background: #ffd41f;
@@ -1166,7 +1170,7 @@ header .lupa, .iconCar, .iconCue{
   margin-top: 4.5%;
   font-size: 14px;
   padding: 1.5%;
-  max-width: 50.5%;
+  max-width: 40.5%;
   position: relative;
   left: 15.8%;
 }
@@ -2689,8 +2693,8 @@ nav.woocommerce-pagination ul li span.current {
       margin-top: 2%;
       font-size: 16px;
       padding: 2%;
-      max-width: 100%;
-      left: 0%;
+      max-width: 90%;
+      left: 5%;
     }
     .woocommerce-product-gallery__image {
       left: 0%;
