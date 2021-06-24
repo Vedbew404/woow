@@ -1728,7 +1728,7 @@ nav.woocommerce-pagination ul li span.current {
 #tituloNosotros h1 {
     text-align: center;
     font-weight: normal;
-    font-size: calc(0.7rem + 2vw);
+    font-size: calc(1rem + 1.7vw);
     color: #878787;
     width: 60%;
     margin-top: 2%;
@@ -2168,8 +2168,9 @@ nav.woocommerce-pagination ul li span.current {
     }
     header .MiCuenta {
       position: absolute;
-      left: 68%;
+      left: 69%;
       top: 7.8%;
+      width: 30%;
     }
     #posHeader1 .resaltado, #posHeader2 .resaltado {
       position: absolute;
@@ -2318,6 +2319,55 @@ nav.woocommerce-pagination ul li span.current {
     #productos .container-md {
       width: 90%;
     }
+    /* Fin Tienda */
+    /* Nosotros */
+    #backgroundNosotros {
+      background-size: 140%;
+      background-position-x: 46%;
+      background-position-y: 0%;
+      margin-top: -5.2%;
+      margin-bottom: -45%;
+    }
+    #backgroundNosotros .container-md {
+      width: 100%;
+    }
+    #cabeceraNosotros h1 {
+      font-size: 4em;
+      margin-top: 30%;
+      margin-bottom: -4%;
+      left: 0%;
+      float: right;
+    }
+    #tituloNosotros h1 {
+      width: 100%;
+      left: 0%;
+    }
+    #MisionVision .container-md {
+      width: 100%;
+    }
+    #MisionVision .gatoL {
+      right: 0;
+      padding: 0;
+    }
+    #MisionVision .bloqueAzul {
+      padding: 0;
+      right: 0;
+    }
+    #MisionVision h1 {
+      padding-top: 0%;
+      margin-bottom: -3%;
+    }
+    #MisionVision .bloqueAzul h1 {
+      padding-top: 8%;
+    }
+    #MisionVision .perroR {
+      left: 0;
+      padding: 0;
+    }
+    /* Fin Nosotros */
+    /* Contacto */
+    
+    /* Fin Contacto */
   }
   
   /* Smartphones (landscape) ----------- */
