@@ -2144,26 +2144,59 @@ nav.woocommerce-pagination ul li span.current {
 /* Smartphones (portrait and landscape) ----------- */
   @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   /* Styles */
-    header .brand {
-      text-align: center;
-      font-size: 1.2em;
-      margin-left: -12%;
-      top: 12%;
+  /* Globales */
+    header .row {
+      --bs-gutter-x: none;  
     }
-    header .lupa {
+    header .brand {
+      display: none;
+    }
+    header .Lupa {
+      position: relative;
+      left: 135%;
+    }
+    header .Carrito {
+      position: relative;
+      left: 155%;
+    }
+    header .Carrito img {
+      position: relative;
+      left: 25%;
+    }
+    header .MiCuenta {
       position: absolute;
-      right: 30%;
-      top: 3%;
+      left: 68%;
+      top: 7.8%;
     }
     #posHeader1 .resaltado, #posHeader2 .resaltado {
       position: absolute;
-      bottom: 90%;
+      bottom: 84.5%;
+      left: 5%;
+    }
+    #prefooter {
+      padding-right: 30px;
+    }
+    #prefooter .right,
+    #prefooter .left {
+      text-align: center;
+    }
+  /* Home */
+    #backgroundHome {
+      background-size: 150%;
+      background-position-x: 41%;
+      background-position-y: 88%;
+    }
+    #cabecera, #cabecera2 {
+      min-height: 159px;
+    }
+    .navbar {
+      left: 0%;
     }
     .menu-menu-principal-container {
       background: #1e9bd6;
     }
     #cabecera h1 {
-      margin-top: 4.2%;
+      margin-top: 0%;
       font-size: 22px;
     }
     #cabecera input {
@@ -2171,6 +2204,63 @@ nav.woocommerce-pagination ul li span.current {
       max-width: 38.5%;
       left: 71%;
       font-size: 13px;
+    }
+    .woocommerce ul.products[class*=columns-] li.product,
+    .woocommerce-page ul.products[class*=columns-] li.product {
+      width: 98%;
+    }
+    #productos.Slide {
+      display: none;
+    }
+    #productos.slideIpad {
+      display: block;
+    }
+    #banners1 {
+      display: none;
+    }
+    #banners2 {
+      display: block;
+    }
+    /* Fon Home */
+    /* Tienda */
+    #posHeader2 {
+      background: transparent;
+    }
+    /* Tienda */
+    #backgroundTienda {
+      background-size: 140%;
+      background-position-x: 46%;
+      background-position-y: 0%;
+      margin-top: -5.2%;
+      margin-bottom: -12%;
+    }
+    #backgroundTienda .container-md {
+      width: 96%;
+    }
+    #cabecera2 h1 {
+      font-size: 5em;
+      margin-top: 21%;
+      margin-bottom: -4%;
+      left: 0%;
+    }
+    #cabecera2 h2, #Search h2 {
+      margin-bottom: 0% !important;
+      font-size: 1.2em !important;
+      max-width: 95.4% !important;
+      left: 9% !important;
+    }
+    #cabecera2 form {
+      margin-top: 0% !important;
+      font-size: 16px !important;
+      padding: 2% !important;
+      max-width: 62.5% !important;
+      left: 6% !important;
+    }
+    #linea .separNONE {
+      display: none;
+    }
+    #productos .container-md {
+      width: 90%;
     }
   }
   

@@ -21,108 +21,12 @@
         <?php echo do_shortcode ('[yith_wc_productslider id=112]'); ?>
     </div>
 </section>
-<!-- <section id="productos">
+<section id="productos">
     <div class="container-md">
         <h1>Nuevos Productos</h1>
-        <?php //echo do_shortcode ('[products limit="4" columns="2" paginate="true"] '); ?>
-    </div>
-</section> -->
-
-<!-- Esto es el loop de productos en html -->
-<section id="productos" class="slideIpad">
-    <div class="container-md">
-        <h1>Nuevos Productos</h1>
-        <div class="woocommerce columns-2 ">
-            <div class="woocommerce-notices-wrapper"></div>
-            <p class="woocommerce-result-count" style="display: none;">
-                Mostrando 1–4 de 6 resultados</p>
-            <form class="woocommerce-ordering" method="get">
-                <select name="orderby" class="orderby" aria-label="Pedido de la tienda" style="display: none;">
-                    <option value="menu_order">Orden por defecto</option>
-                    <option value="popularity">Ordenar por popularidad</option>
-                    <option value="rating">Ordenar por calificación media</option>
-                    <!-- Dejamos "selected" en "date" para que muestre los mas nuevos -->
-                    <option value="date" selected="selected">Ordenar por los últimos</option>
-                    <option value="price">Ordenar por precio: bajo a alto</option>
-                    <option value="price-desc">Ordenar por precio: alto a bajo</option>
-                </select>
-                <input type="hidden" name="paged" value="1">
-            </form>
-            <ul class="products columns-2">
-                <li
-                    class="product type-product post-127 status-publish first instock product_cat-sin-categorizar has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                    <a href="http://woowcolombia.test/producto/panoleta-azul-copia/"
-                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="288"
-                            height="288" src="http://woowcolombia.test/wp-content/uploads/2021/06/PanoletaAzul.png"
-                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"
-                            srcset="http://woowcolombia.test/wp-content/uploads/2021/06/PanoletaAzul.png 288w, http://woowcolombia.test/wp-content/uploads/2021/06/PanoletaAzul-150x150.png 150w, http://woowcolombia.test/wp-content/uploads/2021/06/PanoletaAzul-100x100.png 100w"
-                            sizes="(max-width: 288px) 100vw, 288px">
-                        <img class="previa2" src="http://woowcolombia.test/wp-content/uploads/2021/06/previa.svg">
-                        <h5 class="separadorsito">.</h5>
-                        <h2 class="woocommerce-loop-product__title">Pañoleta – azul (copia)</h2>
-                        <p>Lorem Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing&nbsp;elit,&nbsp;sed&nbsp;diam&nbsp;nonummy.</p>
-                    </a>
-                </li>
-                <li
-                    class="product type-product post-125 status-publish last instock product_cat-sin-categorizar has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                    <a href="http://woowcolombia.test/producto/arnes-floral-copia/"
-                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300"
-                            height="300"
-                            src="http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral-300x300.png"
-                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"
-                            srcset="http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral-300x300.png 300w, http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral-150x150.png 150w, http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral-100x100.png 100w, http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral.png 310w"
-                            sizes="(max-width: 300px) 100vw, 300px">
-                        <img class="previa2" src="http://woowcolombia.test/wp-content/uploads/2021/06/previa.svg">
-                        <h5 class="separadorsito">.</h5>
-                        <h2 class="woocommerce-loop-product__title">Arnes Floral (copia)</h2>
-                        <p>Lorem Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing&nbsp;elit,&nbsp;sed&nbsp;diam&nbsp;nonummy.</p>
-                    </a>
-                </li>
-                <li
-                    class="product type-product post-123 status-publish first instock product_cat-sin-categorizar has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                    <a href="http://woowcolombia.test/producto/placas-id-smart-copia/"
-                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300"
-                            height="300" src="http://woowcolombia.test/wp-content/uploads/2021/06/single-300x300.png"
-                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"
-                            srcset="http://woowcolombia.test/wp-content/uploads/2021/06/single-300x300.png 300w, http://woowcolombia.test/wp-content/uploads/2021/06/single-150x150.png 150w, http://woowcolombia.test/wp-content/uploads/2021/06/single-100x100.png 100w, http://woowcolombia.test/wp-content/uploads/2021/06/single.png 319w"
-                            sizes="(max-width: 300px) 100vw, 300px">
-                        <img class="previa2" src="http://woowcolombia.test/wp-content/uploads/2021/06/previa.svg">
-                        <h5 class="separadorsito">.</h5>
-                        <h2 class="woocommerce-loop-product__title">Placas ID Smart (copia)</h2>
-                        <p>Lorem Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing&nbsp;elit,&nbsp;sed&nbsp;diam&nbsp;nonummy.</p>
-                    </a>
-                </li>
-                <li
-                    class="product type-product post-70 status-publish last instock product_cat-sin-categorizar has-post-thumbnail shipping-taxable purchasable product-type-variable">
-                    <a href="http://woowcolombia.test/producto/arnes-floral/"
-                        class="woocommerce-LoopProduct-link woocommerce-loop-product__link"><img width="300"
-                            height="300"
-                            src="http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral-300x300.png"
-                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" alt="" loading="lazy"
-                            srcset="http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral-300x300.png 300w, http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral-150x150.png 150w, http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral-100x100.png 100w, http://woowcolombia.test/wp-content/uploads/2021/06/ArnesFloral.png 310w"
-                            sizes="(max-width: 300px) 100vw, 300px">
-                        <img class="previa2" src="http://woowcolombia.test/wp-content/uploads/2021/06/previa.svg">
-                        <h5 class="separadorsito">.</h5>
-                        <h2 class="woocommerce-loop-product__title">Arnes Floral</h2>
-                        <p>Lorem Lorem ipsum dolor sit amet, consectetuer
-                            adipiscing&nbsp;elit,&nbsp;sed&nbsp;diam&nbsp;nonummy.</p>
-                    </a>
-                </li>
-            </ul>
-            <nav class="woocommerce-pagination">
-                <ul class="page-numbers">
-                    <li><span aria-current="page" class="page-numbers current">1</span></li>
-                    <li><a class="page-numbers" href="/?orderby=date&amp;product-page=2">2</a></li>
-                    <li><a class="next page-numbers" href="/?orderby=date&amp;product-page=2">→</a></li>
-                </ul>
-            </nav>
-        </div>
+        <?php echo do_shortcode ('[products limit="4" columns="2" paginate="true"] '); ?>
     </div>
 </section>
-
 <section id="separadorInvisible"></section>
 <section id="banners1">
     <div class=" container">
