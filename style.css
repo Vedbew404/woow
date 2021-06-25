@@ -2464,9 +2464,10 @@ nav.woocommerce-pagination ul li span.current {
     }
     #primary .woocommerce-product-gallery__image {
       left: 14.5%;
+      max-width: 85%;
     }
     #primary .wp-post-image {
-      margin-left: 0% !important;
+      margin-left: 6% !important;
     }
     #primary .summary {
       right: -10%;
@@ -2504,7 +2505,7 @@ nav.woocommerce-pagination ul li span.current {
       margin-right: 6%;
     }
     #primary .single_variation_wrap a.signoMAS {
-      margin-top: 1.8%;
+      margin-top: -1.2%;
     }
     #primary .single_add_to_cart_button {
       font-size: calc(1.8rem + 0.8vw) !important;
