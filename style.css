@@ -1703,7 +1703,7 @@ nav.woocommerce-pagination ul li span.current {
   margin-bottom: 1%;
 }
 #imgsProduct .descripcionHTML h1 {
-  font-size: calc(2.2rem + 5vw);
+  font-size: calc(0.7rem + 6.5vw);
 }
 .woocommerce-Tabs-panel.woocommerce-Tabs-panel--description.panel.entry-content.wc-tab,
 .woocommerce div.product .woocommerce-tabs .panel,
@@ -2254,8 +2254,8 @@ nav.woocommerce-pagination ul li span.current {
     #banners2 {
       display: block;
     }
-    /* Fon Home */
-    /* Tienda */
+  /* Fin Home */
+  /* Tienda */
     #backgroundTienda {
       background-size: 140%;
       background-position-x: 46%;
@@ -2278,16 +2278,19 @@ nav.woocommerce-pagination ul li span.current {
     aside#secondary {
       margin-top: 25%;
     }
-    #backgroundTienda .widget-title {
+    #product_search_widget-2 .widget-title {
       color: #333333 !important;
     }
-    #cabecera2 h2, #Search h2 {
+    #cabecera2 h2,
+    #Search h2,
+    #product_search_widget-2 .widget-title {
       margin-bottom: 0% !important;
       font-size: 1.27em !important;
       max-width: 100% !important;
       left: 10% !important;
     }
-    #cabecera2 form {
+    #cabecera2 form,
+    #primary #Search form {
       margin-top: 1% !important;
       font-size: 16px !important;
       padding: 2% !important;
@@ -2323,8 +2326,8 @@ nav.woocommerce-pagination ul li span.current {
     #productos .container-md {
       width: 90%;
     }
-    /* Fin Tienda */
-    /* Nosotros */
+  /* Fin Tienda */
+  /* Nosotros */
     #backgroundNosotros {
       background-size: 140%;
       background-position-x: 46%;
@@ -2368,8 +2371,8 @@ nav.woocommerce-pagination ul li span.current {
       left: 0;
       padding: 0;
     }
-    /* Fin Nosotros */
-    /* Contacto */
+  /* Fin Nosotros */
+  /* Contacto */
     #backgroundContacto {
       background-size: 140%;
       background-position-x: 46%;
@@ -2437,7 +2440,96 @@ nav.woocommerce-pagination ul li span.current {
       width: 100%;
       margin-top: 3%;
     }
-    /* Fin Contacto */
+  /* Fin Contacto */
+  /* Single */
+    #primary aside#secondary {
+      margin-top: 22%;
+    }
+    #primary .aDeBotonR {
+      left: 100%;
+    }
+    #primary .widget-title {
+      left: 43% !important;
+      max-width: 55% !important;
+      margin-bottom: 4% !important;
+    }
+    #primary #Search form {
+      max-width: 90% !important;
+      left: 5% !important;
+    }
+    #primary #botoneslyr {
+      position: absolute;
+      right: 44% !important;
+      top: -6.3%;
+    }
+    #primary .woocommerce-product-gallery__image {
+      left: 14.5%;
+    }
+    #primary .wp-post-image {
+      margin-left: 0% !important;
+    }
+    #primary .summary {
+      right: -10%;
+      width: 90% !important;
+    }
+    #primary .product_title {
+      font-size: calc(2.5rem + 2vw);
+    }
+    #primary .woocommerce-Price-amount.amount {
+      font-size: calc(2.3rem + 2.3vw);
+    }
+    #primary .woocommerce-product-details__short-description p {
+      font-size: calc(1.1rem + 1.1vw);
+      max-width: 100%;
+    }
+    #primary .summary.entry-summary label {
+      font-size: calc(2.2rem + 1.1vw);
+    }
+    #primary .woocommerce div.product form.cart .variations select {
+      min-width: 60%;
+      font-size: 1.8em;
+      position: relative;
+      left: 2%;
+    }
+    #primary .woocommerce-variation-add-to-cart.variations_button .input-text.qty.text {
+      font-size: calc(1.8rem + 1vw);
+    }
+    #primary .single_variation_wrap a.signoMENOS,
+    #primary .single_variation_wrap a.signoMAS {
+      width: 36px;
+      height: 56px;
+    }
+    #primary .single_variation_wrap a.signoMENOS {
+      margin-top: -4.2%;
+      margin-right: 6%;
+    }
+    #primary .single_variation_wrap a.signoMAS {
+      margin-top: 1.8%;
+    }
+    #primary .single_add_to_cart_button {
+      font-size: calc(1.8rem + 0.8vw) !important;
+      padding: 5% 4% 5% 4% !important;
+      margin-top: 6%;
+      max-width: 100%;
+      left: 3%;
+    }
+    #primary .product_meta {
+      font-size: 1.8em;
+      max-width: 90%;
+    }
+    #primary #imgsProduct {
+      margin-top: 9%;
+    }
+    #primary #imgsProduct .descripcionHTML {
+      border-radius: 0;
+      margin-left: 0%;
+      margin-right: 0%;
+    }
+    #primary .tabs.wc-tabs li {
+      font-size: 1.2em;
+      width: 34%;
+    }
+  /* Fin Single */
   }
   
   /* Smartphones (landscape) ----------- */
