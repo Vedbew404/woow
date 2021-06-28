@@ -18,7 +18,7 @@
 <section id="productos" class="Slide">
     <div class="container-md">
         <h1>Nuevos Productos</h1>
-        <?php echo do_shortcode ('[yith_wc_productslider id=112]'); ?>
+        <?php echo do_shortcode ('[yith_wc_productslider id=69]'); ?>
     </div>
 </section>
 <section id="productos">
