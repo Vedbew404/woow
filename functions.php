@@ -254,10 +254,10 @@ function moverse_entre_productos(){
 	echo '
 		<div id="botoneslyr">
 			<a id="previus" class="aDeBotonL" href="#">
-				<img class="botonL" src="http://woowcolombia.test/wp-content/uploads/2021/06/left.svg" alt="Boton producto anterior">
+				<img class="botonL" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/left.svg" alt="Boton producto anterior">
 			</a>
 			<a id="next" class="aDeBotonR" href="#">
-				<img class="botonR" src="http://woowcolombia.test/wp-content/uploads/2021/06/right.svg" alt="Boton producto siguiente">
+				<img class="botonR" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/right.svg" alt="Boton producto siguiente">
 			</a>
 		</div>
 		<span class="separadore"></span>
@@ -283,7 +283,7 @@ function short_desc_on_product_archives() {
 // Agregar la imagen de "Vista previa" en carrusel
 function vista_previa_hover() {
 	echo '
-	<img class="previa2" src="http://woowcolombia.test/wp-content/uploads/2021/06/previa.svg">
+	<img class="previa2" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/previa.svg">
 	';
 }
 	add_action('woocommerce_before_shop_loop_item_title', 'vista_previa_hover');
@@ -301,8 +301,10 @@ function espacio_para_descripci贸n_HTML() {
 	echo'
 	<section id="imgsProduct">
 		<div class="descripcionHTML">
-			<h1>Espacio para descripci贸n HTML
-			</h1>
+			<h1>
+	';
+	the_excerpt();
+	echo'	</h1>
 		</div>
 	</section>
 	';
@@ -310,7 +312,7 @@ function espacio_para_descripci贸n_HTML() {
 add_action('woocommerce_after_single_product_summary', 'espacio_para_descripci贸n_HTML', 5);
 
 // Bloque carrusel de productos en "Single"
-function carrusel_productos() {
+/*function carrusel_productos() {
 	echo'
 		<section id="productos" class="Slide">
 			<div class="container-md">
@@ -322,14 +324,14 @@ function carrusel_productos() {
 		</section>
 		';
 }
-add_action('woocommerce_after_single_product_summary', 'carrusel_productos', 5);
+add_action('woocommerce_after_single_product_summary', 'carrusel_productos', 5);*/
 
 // Titulo de cantidad en "Single" y signo menos
 function titulo_cantidad_single() {
 	echo '
 		<label for="Cantidad"><strong>Cantidad</strong></>
 		<br />
-		<a class="signoMENOS" id="menos"><img src="http://woowcolombia.test/wp-content/uploads/2021/06/signoMENOS.svg" alt="Signo Menos"></a>
+		<a class="signoMENOS" id="menos"><img src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/signoMENOS.svg" alt="Signo Menos"></a>
 		';
 }
 add_action('woocommerce_before_add_to_cart_quantity', 'titulo_cantidad_single', 2);
@@ -341,5 +343,12 @@ function jk_related_products_args( $args ) {
 	return $args;
 }
 add_filter( 'woocommerce_output_related_products_args', 'jk_related_products_args' );
+
+
+/**
+ * Oculta precios y boton "compra" de WooCommerce en la página de tienda
+*/ 
+remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
+remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 
 

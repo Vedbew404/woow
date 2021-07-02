@@ -47,23 +47,34 @@
                             <div class="Lupa col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="lupa" src="http://woowcolombia.test/wp-content/uploads/2021/06/lupa.svg" alt="Buscar">
+                                        <?php
+                                            if ( wp_is_mobile() ) :
+                                        ?>
+                                            <img class="lupa" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/lupaW.svg" alt="Buscar">
+                                        <?php
+                                            else :
+                                        ?>
+                                            <img class="lupa" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/lupa.svg" alt="Buscar">
+                                        <?php
+                                            endif;
+                                        ?>
                                     </a>
                                 </div>
                             </div>
                             <div class="Carrito col-4">
                                 <div class="iconos">
-                                    <a href="#">
-                                        <img class="iconCar" src="http://woowcolombia.test/wp-content/uploads/2021/06/carrito.svg"
-                                            alt="Carrito">
+                                    <?php global $woocommerce; ?>
+                                    <a href="https://woowcolombia.com/dev/Carrito">
+                                        <img class="iconCar" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/carrito.svg" alt="Carrito">
+                                        <span class="total-pro"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>
                                     </a>
                                 </div>
-                                <a href="">Carrito</a>
+                                <a href="https://woowcolombia.com/dev/Carrito">Carrito</a>
                             </div>
                             <div class="MiCuenta col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="iconCue" src="http://woowcolombia.test/wp-content/uploads/2021/06/cuenta.svg"
+                                        <img class="iconCue" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/cuenta.svg"
                                             alt="Cuenta">
                                     </a>
                                 </div>
@@ -130,7 +141,7 @@
                             <div class="Lupa col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="lupa" src="http://woowcolombia.test/wp-content/uploads/2021/06/lupa.svg" alt="Buscar" style="visibility: collapse;">
+                                        <img class="lupa" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/lupa.svg" alt="Buscar" style="visibility: collapse;">
                                     </a>
                                 </div>
                             </div>
@@ -140,7 +151,17 @@
                             <div class="Lupa col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="lupa" src="http://woowcolombia.test/wp-content/uploads/2021/06/lupa.svg" alt="Buscar">
+                                        <?php
+                                            if ( wp_is_mobile() ) :
+                                        ?>
+                                            <img class="lupa" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/lupaW.svg" alt="Buscar">
+                                        <?php
+                                            else :
+                                        ?>
+                                            <img class="lupa" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/lupa.svg" alt="Buscar">
+                                        <?php
+                                            endif;
+                                        ?>
                                     </a>
                                 </div>
                             </div>
@@ -149,17 +170,18 @@
                         ?>
                             <div class="Carrito col-4">
                                 <div class="iconos">
-                                    <a href="#">
-                                        <img class="iconCar" src="http://woowcolombia.test/wp-content/uploads/2021/06/carrito.svg"
-                                            alt="Carrito">
+                                    <?php global $woocommerce; ?>
+                                    <a href="https://woowcolombia.com/dev/Carrito">
+                                        <img class="iconCar" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/carrito.svg" alt="Carrito">
+                                        <span class="total-pro"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?></span>
                                     </a>
                                 </div>
-                                <a href="http://woowcolombia.test/carrito/">Carrito</a>
+                                <a href="https://woowcolombia.com/dev/Carrito">Carrito</a>
                             </div>
                             <div class="MiCuenta col-4">
                                 <div class="iconos">
                                     <a href="#">
-                                        <img class="iconCue" src="http://woowcolombia.test/wp-content/uploads/2021/06/cuenta.svg"
+                                        <img class="iconCue" src="http://woowcolombia.com/dev/wp-content/uploads/2021/06/cuenta.svg"
                                             alt="Cuenta">
                                     </a>
                                 </div>
@@ -181,7 +203,17 @@
                         </div>
                     </div>
                     <div class="col-6">
+                        <?php
+                            if ( wp_is_mobile() ) :
+                        ?>
+                        <nav id="site-navigation" class="nav2 navbar navbar-expand-lg navbar-light main-navigation">
+                        <?php
+                            else :
+                        ?>
                         <nav id="site-navigation" class="nav2 navbar navbar-expand-lg navbar-dark main-navigation">
+                        <?php
+                            endif;
+                        ?>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarTogglerWOOW" aria-controls="navbarTogglerWOOW"
                                 aria-expanded="false" aria-label="Toggle navigation">

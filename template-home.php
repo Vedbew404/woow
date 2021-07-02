@@ -21,13 +21,6 @@
         <?php echo do_shortcode ('[yith_wc_productslider id=69]'); ?>
     </div>
 </section>
-<section id="productos" class="Slide2">
-    <div class="container-md">
-        <h1>Nuevos Productos</h1>
-        <?php echo do_shortcode ('[products limit="4" columns="2" paginate="true"] '); ?>
-    </div>
-</section>
-<section id="separadorInvisible"></section>
 <section id="banners1">
     <div class=" container">
         <div class="row">

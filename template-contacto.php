@@ -57,8 +57,6 @@
                         <option value="" selected="selected">Mascota</option>
                         <option value="10">Perro</option>
                         <option value="11">Gato</option>
-                        <option value="12">Ave</option>
-                        <option value="13">Rata</option>
                     </select>
                     <br />
                     <input class="FormE" type="email" placeholder="Email" />
